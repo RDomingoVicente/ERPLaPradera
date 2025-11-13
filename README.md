@@ -1,6 +1,6 @@
 # ERP-La-Pradera
 Sistema de Gestión ERP/Fiscal para "La Pradera"
----
+-
 
 ### **Especificación de Proyecto: Sistema de Gestión ERP/Fiscal para "La Pradera"**
 
@@ -13,7 +13,11 @@ Sistema de Gestión ERP/Fiscal para "La Pradera"
 
 #### **1. Resumen Ejecutivo**
 
-(Sin cambios)
+El propósito de este software es proporcionar una solución integral para la gestión de "La Pradera", enfocándose en dos áreas críticas:
+
+*   **Optimización Fiscal Inteligente:** Ofrecer una herramienta de simulación para calcular y decidir estratégicamente los ingresos a declarar, garantizando que cada declaración esté justificada con transacciones reales del TPV y cumpla con la normativa **Veri\*factu**.
+*   **Inteligencia de Negocio Real:** Mantener un sistema de contabilidad dual (Fiscal vs. Real) que permita analizar la rentabilidad total y real del negocio, incluyendo todos los ingresos y gastos, declarables o no.
+*   **Automatización de Procesos:** Digitalizar y automatizar la entrada de facturas de compra a través de un servicio de OCR y simplificar al máximo el registro de datos diarios.
 
 #### **2. Glosario de Términos Clave**
 

@@ -8,6 +8,7 @@ app = Flask(__name__)
 # Define la ruta a tu carpeta de plantillas
 custom_template_path = '../MisTemplates'
 
+
 # Cargar templates de invoice2data
 templates = read_templates(folder=custom_template_path)
 

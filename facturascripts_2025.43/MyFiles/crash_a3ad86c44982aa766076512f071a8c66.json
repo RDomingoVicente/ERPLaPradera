@@ -1,0 +1,14 @@
+{
+    "code": 1,
+    "message": "Uncaught Exception: Error creating table attached_files: CREATE TABLE attached_files (`date`  date NOT NULL, `filename`  character varying(100) NOT NULL, `hour`  time NULL, `idfile`  INTEGER NOT NULL AUTO_INCREMENT, `mimetype`  character varying(100) NULL, `path`  character varying(200) NOT NULL, `size`  integer NOT NULL, CONSTRAINT attached_files_pkey PRIMARY KEY (idfile)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci; in \/Core\/Template\/ModelClass.php:107\n\nStack trace:\n#0 \/Core\/Model\/Empresa.php(172): FacturaScripts\\Core\\Template\\ModelClass->__construct()\n#1 \/Core\/Template\/ModelClass.php(105): FacturaScripts\\Core\\Model\\Empresa->install()\n#2 \/Core\/Model\/User.php(281): FacturaScripts\\Core\\Template\\ModelClass->__construct()\n#3 \/Core\/Template\/ModelClass.php(105): FacturaScripts\\Core\\Model\\User->install()\n#4 \/Core\/Session.php(74): FacturaScripts\\Core\\Template\\ModelClass->__construct()\n#5 \/Core\/Model\/WorkEvent.php(66): FacturaScripts\\Core\\Session::user()\n#6 \/Core\/Template\/ModelClass.php(115): FacturaScripts\\Core\\Model\\WorkEvent->clear()\n#7 \/Core\/Template\/ModelTrait.php(161): FacturaScripts\\Core\\Template\\ModelClass->__construct()\n#8 \/Core\/Template\/ModelTrait.php(55): FacturaScripts\\Core\\Model\\WorkEvent::table()\n#9 \/Core\/WorkQueue.php(98): FacturaScripts\\Core\\Model\\WorkEvent::all(Array, Array, 0, 1)\n#10 \/index.php(69): FacturaScripts\\Core\\WorkQueue::run()\n#11 {main}\n  thrown",
+    "file": "\/Core\/Template\/ModelClass.php",
+    "line": 107,
+    "hash": "a3ad86c44982aa766076512f071a8c66",
+    "url": "\/Core\/Assets\/Images\/installed.png",
+    "report_url": "https:\/\/facturascripts.com\/errores\/a3ad86c44982aa766076512f071a8c66",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Fa3ad86c44982aa766076512f071a8c66",
+    "core_version": 2025.43,
+    "php_version": "8.4.13",
+    "os": "Linux",
+    "plugin_list": ""
+}

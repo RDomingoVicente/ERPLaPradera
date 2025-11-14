@@ -1,2 +1,0 @@
-issuer,invoice_number,date,amount,nif,resumen_lines,currency,desc
-TUDIS,M5-2344,31/10/2025,"1.422,55",72371946P,"[{'base_imponible': '151,32', 'percent_iva': '4,00', 'importe_iva': '6,05'}, {'base_imponible': '1.150,16', 'percent_iva': '10,00', 'importe_iva': '115,02'}]",EUR,Factura de TUDIS

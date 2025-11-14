@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Class \"FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser\" not found in \/Dinamic\/Controller\/Invoice2DataParser.php:7\n\nStack trace:\n#0 \/vendor\/composer\/ClassLoader.php(576): include()\n#1 \/vendor\/composer\/ClassLoader.php(427): {closure:Composer\\Autoload\\ClassLoader::initializeIncludeClosure():575}('\/v...')\n#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('FacturaScripts\\\\...')\n#3 \/Core\/Internal\/PluginsDeploy.php(61): class_exists('\\\\FacturaScripts...')\n#4 \/Core\/Plugins.php(125): FacturaScripts\\Core\\Internal\\PluginsDeploy::initControllers()\n#5 \/Core\/Controller\/AdminPlugins.php(103): FacturaScripts\\Core\\Plugins::deploy(true, true)\n#6 \/Core\/Base\/Controller.php(290): FacturaScripts\\Core\\Controller\\AdminPlugins->privateCore(Object(FacturaScripts\\Core\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#7 \/Core\/Kernel.php(430): FacturaScripts\\Core\\Base\\Controller->run()\n#8 \/Core\/Kernel.php(198): FacturaScripts\\Core\\Kernel::runController('\/AdminPlugins')\n#9 \/index.php(64): FacturaScripts\\Core\\Kernel::run('\/AdminPlugins')\n#10 {main}\n  thrown",
+    "file": "\/Dinamic\/Controller\/Invoice2DataParser.php",
+    "line": 7,
+    "hash": "138d2f7241184264afe8af238a16ed85",
+    "url": "\/AdminPlugins",
+    "ip": "165.225.92.98",
+    "report_url": "https:\/\/facturascripts.com\/errores\/138d2f7241184264afe8af238a16ed85",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F138d2f7241184264afe8af238a16ed85",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

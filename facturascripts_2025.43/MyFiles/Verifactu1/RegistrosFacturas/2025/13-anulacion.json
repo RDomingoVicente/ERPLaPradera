@@ -1,0 +1,25 @@
+{
+    "RegistroAnulacion": {
+        "IDVersion": "1.0",
+        "IDFactura": {
+            "IDEmisorFacturaAnulada": "13122856E",
+            "NumSerieFacturaAnulada": "FAC2025S9",
+            "FechaExpedicionFacturaAnulada": "08-11-2025"
+        },
+        "RefExterna": "13|FAC2025S9",
+        "SinRegistroPrevio": "N",
+        "RechazoPrevio": "N",
+        "SistemaInformatico": {
+            "NombreRazon": "Carlos Garc\u00eda G\u00f3mez",
+            "NIF": "74003828V",
+            "NombreSistemaInformatico": "FacturaScripts",
+            "IdSistemaInformatico": "FS",
+            "Version": 0.72,
+            "NumeroInstalacion": "24214",
+            "TipoUsoPosibleSoloVerifactu": "N",
+            "TipoUsoPosibleMultiOT": "S",
+            "IndicadorMultiplesOT": "S"
+        },
+        "FechaHoraHusoGenRegistro": "2025-11-08T12:22:30+01:00"
+    }
+}

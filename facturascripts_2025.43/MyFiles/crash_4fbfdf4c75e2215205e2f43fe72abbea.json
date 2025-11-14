@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "message": "An exception has been thrown during the rendering of a template (\"Method toolBox does not exist on class FacturaScripts\\Dinamic\\Controller\\Invoice2DataParser.\").\n\nStack trace:\n#0 \/MyFiles\/Cache\/Twig\/c9\/c9413effa10e606352218c9f521f161e.php(493): Twig\\Template->yieldBlock('body', Array, Array)\n#1 \/vendor\/twig\/twig\/src\/Template.php(430): __TwigTemplate_bf9f3bf3a62802d676056fc9730ceb15->block_fullBody(Array, Array)\n#2 \/MyFiles\/Cache\/Twig\/c9\/c9413effa10e606352218c9f521f161e.php(332): Twig\\Template->yieldBlock('fullBody', Array, Array)\n#3 \/vendor\/twig\/twig\/src\/Template.php(360): __TwigTemplate_bf9f3bf3a62802d676056fc9730ceb15->doDisplay(Array, Array)\n#4 \/MyFiles\/Cache\/Twig\/ca\/ca3b937263755fd672a313c547ee23c6.php(43): Twig\\Template->yield(Array, Array)\n#5 \/vendor\/twig\/twig\/src\/Template.php(360): __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba->doDisplay(Array, Array)\n#6 \/vendor\/twig\/twig\/src\/Template.php(335): Twig\\Template->yield(Array)\n#7 \/vendor\/twig\/twig\/src\/TemplateWrapper.php(38): Twig\\Template->render(Array)\n#8 \/vendor\/twig\/twig\/src\/Environment.php(306): Twig\\TemplateWrapper->render(Array)\n#9 \/Core\/Html.php(92): Twig\\Environment->render('Invoice2DataPar...', Array)\n#10 \/Core\/Response.php(232): FacturaScripts\\Core\\Html::render('Invoice2DataPar...', Array)\n#11 \/Core\/Base\/Controller.php(295): FacturaScripts\\Core\\Response->view('Invoice2DataPar...', Array)\n#12 \/Core\/Kernel.php(430): FacturaScripts\\Core\\Base\\Controller->run()\n#13 \/Core\/Kernel.php(198): FacturaScripts\\Core\\Kernel::runController('\/Invoice2DataPa...')\n#14 \/index.php(64): FacturaScripts\\Core\\Kernel::run('\/Invoice2DataPa...')\n#15 {main}",
+    "file": "\/Plugins\/ParseaFacturas\/View\/Invoice2DataParser.html.twig",
+    "line": 46,
+    "hash": "4fbfdf4c75e2215205e2f43fe72abbea",
+    "url": "\/Invoice2DataParser",
+    "ip": "165.225.92.98",
+    "report_url": "https:\/\/facturascripts.com\/errores\/4fbfdf4c75e2215205e2f43fe72abbea",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F4fbfdf4c75e2215205e2f43fe72abbea",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

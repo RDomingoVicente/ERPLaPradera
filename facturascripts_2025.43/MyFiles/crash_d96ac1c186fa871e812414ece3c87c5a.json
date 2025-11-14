@@ -1,0 +1,15 @@
+{
+    "code": 64,
+    "message": "Declaration of FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser::__construct() must be compatible with FacturaScripts\\Core\\Contract\\ControllerInterface::__construct(string $className, string $url = '')",
+    "file": "\/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php",
+    "line": 17,
+    "hash": "d96ac1c186fa871e812414ece3c87c5a",
+    "url": "\/Invoice2DataParser",
+    "ip": "83.55.87.138",
+    "report_url": "https:\/\/facturascripts.com\/errores\/d96ac1c186fa871e812414ece3c87c5a",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Fd96ac1c186fa871e812414ece3c87c5a",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

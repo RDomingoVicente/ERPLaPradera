@@ -1,0 +1,7 @@
+[
+    "clearLogs",
+    "fixSeries",
+    "fixAgenciasTransporte",
+    "fixFormasPago",
+    "fixRectifiedInvoices"
+]

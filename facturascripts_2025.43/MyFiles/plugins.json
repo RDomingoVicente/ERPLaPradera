@@ -1,0 +1,91 @@
+[
+    {
+        "compatible": true,
+        "description": "(Solo funciona en modo pruebas hasta la version 1) Permite la integraci\u00f3n con Verifactu con FacturaScripts para la emisi\u00f3n de facturas electr\u00f3nicas.",
+        "enabled": true,
+        "folder": "Verifactu",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2025.43,
+        "min_php": 8,
+        "name": "Verifactu",
+        "order": 1,
+        "post_disable": false,
+        "post_enable": false,
+        "require": [],
+        "require_php": [
+            "soap"
+        ],
+        "version": 0.72
+    },
+    {
+        "compatible": true,
+        "description": "Formato de factura alternativo al que viene por defecto en FacturaScripts. Compatible con Verifactu.",
+        "enabled": true,
+        "folder": "FacturaPDF1",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2025.1,
+        "min_php": 8,
+        "name": "FacturaPDF1",
+        "order": 2,
+        "post_disable": false,
+        "post_enable": false,
+        "require": [],
+        "require_php": [],
+        "version": 2.2
+    },
+    {
+        "compatible": true,
+        "description": "Modifica el aspecto de FacturaScripts para usar una barra superior compacta y una barra lateral de men\u00fa.",
+        "enabled": false,
+        "folder": "NeoTheme",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2025,
+        "min_php": 8,
+        "name": "NeoTheme",
+        "order": 0,
+        "post_disable": false,
+        "post_enable": false,
+        "require": [],
+        "require_php": [],
+        "version": 2.9
+    },
+    {
+        "compatible": true,
+        "description": "Permite imprimir tickets de facturas, albaranes, pedidos, presupuestos y servicios.",
+        "enabled": true,
+        "folder": "Tickets",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2025.43,
+        "min_php": 8,
+        "name": "Tickets",
+        "order": 3,
+        "post_disable": false,
+        "post_enable": false,
+        "require": [],
+        "require_php": [
+            "intl"
+        ],
+        "version": 2.6
+    },
+    {
+        "compatible": true,
+        "description": "Permite subir ficheros pdf de facturas y parsearlas hacia un endpoint",
+        "enabled": true,
+        "folder": "ParseaFacturas",
+        "hidden": false,
+        "installed": true,
+        "min_version": 2025.1,
+        "min_php": 8,
+        "name": "ParseaFacturas",
+        "order": 4,
+        "post_disable": false,
+        "post_enable": true,
+        "require": [],
+        "require_php": [],
+        "version": 0.1
+    }
+]

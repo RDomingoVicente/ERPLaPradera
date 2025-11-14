@@ -1,0 +1,15 @@
+{
+    "code": 1,
+    "message": "Uncaught Error: Call to undefined method FacturaScripts\\Core\\Base\\Controller::toolBox() in \/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php:103\n\nStack trace:\n#0 \/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php(92): FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser->toolBox()\n#1 \/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php(45): FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser->getInvoiceData()\n#2 \/Core\/Base\/Controller.php(290): FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser->privateCore(Object(FacturaScripts\\Core\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#3 \/Core\/Kernel.php(430): FacturaScripts\\Core\\Base\\Controller->run()\n#4 \/Core\/Kernel.php(198): FacturaScripts\\Core\\Kernel::runController('\/Invoice2DataPa...')\n#5 \/index.php(64): FacturaScripts\\Core\\Kernel::run('\/Invoice2DataPa...')\n#6 {main}\n  thrown",
+    "file": "\/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php",
+    "line": 103,
+    "hash": "6711182184b25464a6219f3baed70525",
+    "url": "\/Invoice2DataParser",
+    "ip": "83.55.87.138",
+    "report_url": "https:\/\/facturascripts.com\/errores\/6711182184b25464a6219f3baed70525",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F6711182184b25464a6219f3baed70525",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

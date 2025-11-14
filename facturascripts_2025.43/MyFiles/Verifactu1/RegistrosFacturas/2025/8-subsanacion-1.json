@@ -1,0 +1,45 @@
+{
+    "RegistroAlta": {
+        "IDVersion": "1.0",
+        "IDFactura": {
+            "IDEmisorFactura": "13122856E",
+            "NumSerieFactura": "FAC2025S4",
+            "FechaExpedicionFactura": "03-11-2025"
+        },
+        "RefExterna": "8|FAC2025S4",
+        "NombreRazonEmisor": "Bar-Restaurante La Pradera",
+        "Subsanacion": "S",
+        "RechazoPrevio": "N",
+        "TipoFactura": "F2",
+        "FechaOperacion": "03-11-2025",
+        "DescripcionOperacion": "Venta de productos o servicios",
+        "FacturaSimplificadaArt7273": "S",
+        "FacturaSinIdentifDestinatarioArt61d": "N",
+        "Desglose": {
+            "DetalleDesglose": [
+                {
+                    "Impuesto": "01",
+                    "ClaveRegimen": "01",
+                    "CalificacionOperacion": "S1",
+                    "TipoImpositivo": "10.00",
+                    "CuotaRepercutida": "1.00",
+                    "BaseImponibleOimporteNoSujeto": "10.00"
+                }
+            ]
+        },
+        "CuotaTotal": "1.00",
+        "ImporteTotal": "11.00",
+        "SistemaInformatico": {
+            "NombreRazon": "Carlos Garc\u00eda G\u00f3mez",
+            "NIF": "74003828V",
+            "NombreSistemaInformatico": "FacturaScripts",
+            "IdSistemaInformatico": "FS",
+            "Version": 0.72,
+            "NumeroInstalacion": "24214",
+            "TipoUsoPosibleSoloVerifactu": "N",
+            "TipoUsoPosibleMultiOT": "S",
+            "IndicadorMultiplesOT": "S"
+        },
+        "FechaHoraHusoGenRegistro": "2025-11-03T22:52:48+01:00"
+    }
+}

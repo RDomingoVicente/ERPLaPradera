@@ -1,0 +1,251 @@
+{% import 'Macro/GoogleTagManager.html.twig' as GoogleTagManager %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ constant('FS_LANG') | slice(0, 2) }}"
+      xml:lang="{{ constant('FS_LANG') | slice(0, 2) }}">
+<head>
+    {{ GoogleTagManager.head() }}
+    {% for item in getIncludeViews('MenuTemplate', 'HeadFirst') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% block meta %}
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>{{ fsc.title | raw }}</title>
+        <meta name="description" content="{{ trans('meta-description') }}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="generator" content="FacturaScripts"/>
+        <meta name="robots" content="noindex"/>
+    {% endblock %}
+    {% block icons %}
+        <link rel="shortcut icon" href="{{ asset('Dinamic/Assets/Images/favicon.ico') }}"/>
+        <link rel="apple-touch-icon" sizes="180x180"
+              href="{{ asset('Dinamic/Assets/Images/apple-icon-180x180.png') }}"/>
+    {% endblock %}
+    {% for item in getIncludeViews('MenuTemplate', 'CssBefore') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% block css %}
+        <link rel="stylesheet" href="{{ asset('node_modules/bootstrap/dist/css/bootstrap.min.css') }}?v=5"/>
+        <link rel="stylesheet" href="{{ asset('node_modules/@fortawesome/fontawesome-free/css/all.min.css') }}?v=6"/>
+        <link rel="stylesheet" href="{{ asset('node_modules/jquery-ui-dist/jquery-ui.min.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('Dinamic/Assets/CSS/custom.css') }}?v=7"/>
+        <link rel="stylesheet" href="{{ asset('Dinamic/Assets/CSS/neotheme.css') }}?v=6"/>
+    {% endblock %}
+    {# Adds custom CSS assets #}
+    {% for css in assetManager.get('css') %}
+        <link rel="stylesheet" href="{{ css }}"/>
+    {% endfor %}
+    {% for item in getIncludeViews('MenuTemplate', 'CssAfter') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% for item in getIncludeViews('MenuTemplate', 'JsHeadBefore') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% block javascripts %}
+        <script src="{{ asset('node_modules/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js') }}?v=5"></script>
+        <script src="{{ asset('node_modules/jquery-ui-dist/jquery-ui.min.js') }}"></script>
+        <script src="{{ asset('node_modules/pace-js/pace.min.js') }}"></script>
+        <script src="{{ asset('node_modules/@fortawesome/fontawesome-free/js/all.min.js') }}?v=6"></script>
+        <script src="{{ asset('Dinamic/Assets/JS/Custom.js') }}?v=7"></script>
+        <script src="{{ asset('Dinamic/Assets/JS/neotheme.js') }}?v=2"></script>
+    {% endblock %}
+    {# Adds custom JS assets #}
+    {% for js in assetManager.get('js') %}
+        <script src="{{ js }}"></script>
+    {% endfor %}
+    {% for item in getIncludeViews('MenuTemplate', 'JsHeadAfter') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% if debugBarRender %}
+        {{ debugBarRender.renderHead() | raw }}
+    {% endif %}
+    {% for item in getIncludeViews('MenuTemplate', 'HeadEnd') %}
+        {% include item['path'] %}
+    {% endfor %}
+</head>
+{% block fullBody %}
+    <body>
+    {{ GoogleTagManager.body() }}
+    {% for item in getIncludeViews('MenuTemplate', 'BodyFirst') %}
+        {% include item['path'] %}
+    {% endfor %}
+    {% block navbar %}
+        <div id="sidebar">
+            <div class="sidebar-header ps-2 pt-3 pe-2 pb-3">
+                <a href="{{ asset(fsc.user.homepage) }}" class="d-block mb-2">
+                    <i class="fa-solid fa-folder-open" aria-hidden="true"></i> {{ fsc.empresa.nombrecorto }}
+                </a>
+                {% if fsc.user.email %}
+                    <img src="{{ fsc.user.gravatar() }}" alt="{{ fsc.user.email }}" class="rounded mb-2"/>
+                {% endif %}
+                <p class="small">{{ fsc.user.nick }}</p>
+                <form action="MegaSearch" method="post">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="query" placeholder="{{ trans('search') }}"/>
+                        <button type="submit" class="btn">
+                            <i class="fa-solid fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <ul>
+                {% for menuItem in menuManager.getMenu() %}
+                    {{ _self.showMenu(menuItem) }}
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="sidebar-overlay" onclick="hideNeoSidebar();">
+        </div>
+        <nav class="navbar sticky-top navbar-expand navbar-custom d-print-none">
+            <div class="collapse navbar-collapse">
+                {% block navbarContent %}
+                    {% set pageData = fsc.getPageData() %}
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="showNeoSidebar();">
+                                <i class="fa-solid fa-bars me-1" aria-hidden="true"></i>
+                                <span class="d-none d-lg-inline-block">
+                                    {{ pageData.menu is empty ? fsc.empresa.nombrecorto : trans(pageData.menu) }}
+                                </span>
+                                <i class="fa-solid fa-chevron-right ms-2" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        {% if pageData.submenu %}
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" onclick="showNeoSidebar();">
+                                    {{ trans(pageData.submenu) }}
+                                    <i class="fa-solid fa-chevron-right ms-2" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" onclick="showNeoSidebar();">
+                                {{ fsc.title }}
+                            </a>
+                        </li>
+                    </ul>
+                {% endblock %}
+                <ul class="navbar-nav ms-auto">
+                    {% for item in getIncludeViews('MenuTemplate', 'MenuIconBefore') %}
+                        {% include item['path'] %}
+                    {% endfor %}
+                    <li class="nav-item{{ template == 'MegaSearch.html.twig' ? ' active' : '' }}"
+                        title="{{ trans('search') }}">
+                        <a class="nav-link" href="MegaSearch" id="menuIconSearch">
+                            <i class="fa-solid fa-search" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item{{ template == 'Dashboard.html.twig' ? ' active' : '' }}"
+                        title="{{ trans('dashboard') }}">
+                        <a class="nav-link" href="Dashboard">
+                            <i class="fa-solid fa-chalkboard-teacher" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    {% if not config('fs_hide_help_btn') %}
+                        <li class="nav-item" title="{{ trans('help') }}">
+                            <a class="nav-link" href="https://facturascripts.com/ayuda" rel="nofollow"
+                               target="_blank" id="menuIconHelp">
+                                <i class="fa-solid fa-question-circle" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    {% endif %}
+                    <li class="nav-item dropdown" title="{{ trans('user') }}">
+                        <a class="nav-link dropdown-toggle mr-md-2" href="#" data-bs-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" id="menuIconUser" title="{{ trans('user') }}">
+                            <i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="user-list">
+                            <a class="dropdown-item" href="{{ fsc.user.url() }}">
+                                <i class="fa-solid fa-user-circle fa-fw me-1" aria-hidden="true"></i>
+                                {{ fsc.user.nick }}
+                            </a>
+                            <a class="dropdown-item send-email" href="SendMail">
+                                <i class="fa-solid fa-envelope fa-fw me-1" aria-hidden="true"></i>
+                                {{ trans('send-mail') }}
+                            </a>
+                            {% for item in getIncludeViews('MenuTemplate', 'MenuIconUser') %}
+                                {% include item['path'] %}
+                            {% endfor %}
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"
+                               href="{{ asset('login') }}?action=logout&multireqtoken={{ formToken(false) }}">
+                                <i class="fa-solid fa-door-open fa-fw me-1" aria-hidden="true"></i>
+                                {{ trans('logout') }}
+                            </a>
+                        </div>
+                    </li>
+                    {% for item in getIncludeViews('MenuTemplate', 'MenuIconAfter') %}
+                        {% include item['path'] %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    {% endblock %}
+    <div class="bg-header pt-3">
+        {% block messages %}
+            {% include 'Macro/Toasts.html.twig' %}
+            {% from 'Macro/Utils.html.twig' import message as showMessage %}
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        {{ showMessage(log, ['error', 'critical'], 'danger') }}
+                        {{ showMessage(log, ['warning'], 'warning') }}
+                        {{ showMessage(log, ['notice'], 'success') }}
+                        {{ showMessage(log, ['info'], 'info') }}
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+        {% block bodyHeaderOptions %}
+        {% endblock %}
+    </div>
+    {% block body %}
+    {% endblock %}
+    {% for item in getIncludeViews('MenuTemplate', 'JsFooter') %}
+        {% include item['path'] %}
+    {% endfor %}
+    <br/>
+    <br/>
+    <br/>
+    {% if debugBarRender %}
+        {{ debugBarRender.render() | raw }}
+    {% endif %}
+    {% for item in getIncludeViews('MenuTemplate', 'BodyEnd') %}
+        {% include item['path'] %}
+    {% endfor %}
+    </body>
+{% endblock %}
+</html>
+
+{% macro showMenu(item) %}
+    {% import _self as macros %}
+    {% set active = item.active ? 'active' : '' %}
+    {% set menuItemClass = item.active ? 'sidebar-menu-item-active' : '' %}
+    <li class="{{ active }}">
+        {% if item.menu is empty %}
+            <a href="{{ item.url }}" class="{{ menuItemClass }}">
+                <i class="{{ item.icon }} fa-fw me-1" aria-hidden="true"></i> {{ item.title }}
+            </a>
+        {% elseif item.active %}
+            <a href="#sideMenu{{ item.name }}" data-bs-toggle="collapse" aria-expanded="false"
+               class="dropdown-toggle pt-2 pb-2">
+                <i class="fa-solid fa-caret-square-right fa-fw me-1" aria-hidden="true"></i> {{ item.title }}
+            </a>
+            <ul class="collapse show" id="sideMenu{{ item.name }}">
+                {% for subitem in item.menu %}
+                    {{ _self.showMenu(subitem) }}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <a href="#sideMenu{{ item.name }}" data-bs-toggle="collapse" aria-expanded="false"
+               class="dropdown-toggle pt-2 pb-2">
+                <i class="fa-regular fa-caret-square-right fa-fw me-1" aria-hidden="true"></i> {{ item.title }}
+            </a>
+            <ul class="collapse" id="sideMenu{{ item.name }}">
+                {% for subitem in item.menu %}
+                    {{ _self.showMenu(subitem) }}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+{% endmacro %}

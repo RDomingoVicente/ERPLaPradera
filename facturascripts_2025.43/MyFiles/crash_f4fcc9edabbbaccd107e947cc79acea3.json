@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "message": "Method session does not exist on class FacturaScripts\\Dinamic\\Controller\\Invoice2DataParser.\n\nStack trace:\n#0 \/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php(93): FacturaScripts\\Dinamic\\Controller\\Invoice2DataParser->__call('session', Array)\n#1 \/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php(45): FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser->getInvoiceData()\n#2 \/Core\/Base\/Controller.php(290): FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser->privateCore(Object(FacturaScripts\\Core\\Response), Object(FacturaScripts\\Dinamic\\Model\\User), Object(FacturaScripts\\Core\\Base\\ControllerPermissions))\n#3 \/Core\/Kernel.php(430): FacturaScripts\\Core\\Base\\Controller->run()\n#4 \/Core\/Kernel.php(198): FacturaScripts\\Core\\Kernel::runController('\/Invoice2DataPa...')\n#5 \/index.php(64): FacturaScripts\\Core\\Kernel::run('\/Invoice2DataPa...')\n#6 {main}",
+    "file": "\/Core\/Template\/ExtensionsTrait.php",
+    "line": 65,
+    "hash": "f4fcc9edabbbaccd107e947cc79acea3",
+    "url": "\/Invoice2DataParser",
+    "ip": "165.225.92.98",
+    "report_url": "https:\/\/facturascripts.com\/errores\/f4fcc9edabbbaccd107e947cc79acea3",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Ff4fcc9edabbbaccd107e947cc79acea3",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

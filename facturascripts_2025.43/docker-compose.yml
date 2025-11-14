@@ -1,0 +1,20 @@
+services:
+  facturascripts:
+    build:
+      context: /volume1/docker/facturascripts_2025.43
+    image: facturascripts/facturascripts:2025.5
+    restart: always
+    ports:
+      - 8243:80
+    volumes:
+      - /volume1/docker/facturascripts_2025.43:/var/www/html
+    networks:
+      mynetword_rdvnas: {}  
+    environment:
+      TZ: Europe/Madrid
+      PUID: 1026
+      PGID: 100      
+
+networks:
+  mynetword_rdvnas:
+    external: true

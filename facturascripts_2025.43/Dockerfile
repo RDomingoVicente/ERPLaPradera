@@ -1,0 +1,33 @@
+FROM php:8.4-apache-bookworm
+
+# Install dependencies
+RUN apt-get update && \
+apt-get install -y libc-client-dev libkrb5-dev libfreetype6-dev libgmp-dev libjpeg62-turbo-dev libpng-dev libpq-dev libxml2-dev libzip-dev unzip && \
+	apt-get clean && \
+	a2enmod rewrite
+
+# Install GD
+RUN docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
+RUN docker-php-ext-install gd
+
+# Install other extensions one by one
+RUN docker-php-ext-install bcmath
+RUN docker-php-ext-install intl gmp mysqli pdo pdo_mysql pgsql zip
+RUN docker-php-ext-install soap
+
+ENV FS_VERSION=2025.5
+
+# Download FacturaScripts
+ADD https://facturascripts.com/DownloadBuild/1/${FS_VERSION} /tmp/facturascripts.zip
+
+# Unzip
+RUN unzip -q /tmp/facturascripts.zip -d /usr/src/; \
+	rm -rf /tmp/facturascripts.zip
+
+#RUN unzip -q /tmp/facturascripts.zip -d /usr/src/
+
+VOLUME /var/www/html
+
+#RUN facturascripts.sh /usr/local/bin/facturascripts
+#RUN chmod +x /usr/local/bin/facturascripts
+#CMD ["facturascripts"]

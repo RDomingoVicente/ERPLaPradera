@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="invoice" icon="fas fa-copy">
+            <column name="name" display="none" order="0">
+                <widget type="text" fieldname="name" readonly="true" required="true" />
+            </column>
+				</group>
+        <group name="logo" title="logo" valign="bottom" icon="fas fa-image" numcolumns="12">
+            <column name="logo-position" order="100" numcolumns="2">
+								<widget type="select" fieldname="posicionlogo" icon="fas fa-image" translate="true">
+										<values title="dont-show">9</values>
+										<values title="auto">0</values>
+										<values title="left">1</values>
+										<values title="up">2</values>
+                </widget>
+            </column>
+            <column name="logo-offset" order="110" numcolumns="3">
+                <widget type="number" fieldname="margenlogo" icon="fas fa-images" decimal="0" min="0" max="200" step="1" />
+            </column>
+            <column name="logo-size" order="120" numcolumns="2">
+                <widget type="number" fieldname="medidalogo" icon="fas fa-down-left-and-up-right-to-center" decimal="0" min="10" max="100" step="1" />
+            </column>
+				</group>
+				<group name="addresses" title="addresses" valign="bottom" icon="fas fa-location-dot" numcolumns="12">
+            <column name="company-max-space" order="110" numcolumns="9">
+                <widget type="number" fieldname="espaciomaximoempresa" icon="fas fa-arrows-left-right" decimal="0" min="150" max="400" step="1" />
+            </column>
+            <column name="hide-province-same-city" order="120" numcolumns="4">
+                <widget type="checkbox" fieldname="ocultarprovincia" />
+            </column>
+            <column name="hide-country" order="130" numcolumns="8">
+                <widget type="checkbox" fieldname="ocultarpais" />
+            </column>
+            <column name="warehouse" order="150" numcolumns="3">
+								<widget type="select" fieldname="mostraralmacen" icon="fas fa-building" translate="true">
+										<values title="dont-show"> </values>
+										<values title="show-as-warehouse">warehouse</values>
+										<values title="show-as-branch1">branch1</values>
+										<values title="show-as-branch2">branch2</values>
+										<values title="show-as">#</values>
+                </widget>
+            </column>
+            <column name="" order="160" numcolumns="3">
+                <widget type="text" fieldname="tituloalmacen" maxlength="50" />
+            </column>
+            <column name="show-phone" order="170" numcolumns="2">
+                <widget type="checkbox" fieldname="mostraralmacentel" />
+            </column>
+				</group>
+				<group name="invoice-references" title="invoice-references" valign="bottom" icon="fas fa-backward" numcolumns="12">
+            <column name="number2" order="100" numcolumns="3">
+								<widget type="select" fieldname="ref2" translate="true">
+										<values title="dont-show">0</values>
+										<values title="below-customer-data">1</values>
+										<values title="below-invoice-number">2</values>
+                </widget>
+            </column>
+            <column name="hide-order-quote-references" order="110" numcolumns="12">
+                <widget type="checkbox" fieldname="ocultarreferenciasfact" />
+            </column>
+				</group>
+				<group name="tables" title="tables" valign="bottom" icon="fas fa-table" numcolumns="12">
+						<column name="table-head-color" order="150" numcolumns="2">
+								<widget type="color" fieldname="colorcabecera" icon="fas fa-table" />
+						</column>	
+						<column name="table-row-color" order="160" numcolumns="2">
+								<widget type="color" fieldname="colorfilas" icon="fas fa-table-cells-large" />
+						</column>	
+            <column name="space-between-rows" order="170" numcolumns="2">
+                <widget type="number" fieldname="espaciofilas" icon="fas fa-diagram-next" decimal="0" min="0" max="20" step="1" />
+            </column>
+            <column name="hide-product-references" order="180" numcolumns="12">
+                <widget type="checkbox" fieldname="ocultarreferenciaprod" />
+            </column>
+        </group>
+				<group name="foot" title="footer" valign="bottom" icon="fas fa-file-signature" numcolumns="12">
+            <column name="hide-taxes-table" order="100" numcolumns="12">
+                <widget type="checkbox" fieldname="ocultartablaimpuestos" />
+            </column>
+            <column name="payment-expiration" order="110" numcolumns="3">
+								<widget type="select" fieldname="pagoyvencimiento" icon="fas fa-pen-to-square" translate="true">
+										<values title="dont-show">0</values>
+										<values title="original-mode">1</values>
+										<values title="white-mode">2</values>
+										<values title="one-line-mode">3</values>
+                </widget>
+            </column>
+						<column name="payment-method-trans" order="120" numcolumns="9">
+                <widget type="checkbox" fieldname="traducirformaspago" />
+            </column>
+        </group>
+				<group name="text1" title="additional-text-1" valign="bottom" icon="fas fa-file-lines" numcolumns="12">
+            <column name="location" order="100" numcolumns="4">
+								<widget type="select" fieldname="posiciontexto1" icon="fas fa-up-down" translate="true">
+										<values title="dont-show">0</values>
+										<values title="before-invoice-data">2</values>
+										<values title="after-invoice-data">3</values>
+										<values title="after-detail-lines">4</values>
+										<values title="before-tax">5</values>
+										<values title="at-footer">7</values>
+										<values title="in-new-page">9</values>
+                </widget>
+            </column>
+            <column name="size" order="110" numcolumns="2">
+                <widget type="number" fieldname="medidatexto1" icon="fas fa-text-height" decimal="0" min="6" max="20" step="1" />
+            </column>
+						<column name="color" order="120" numcolumns="2">
+								<widget type="color" fieldname="colortexto1" icon="fas fa-palette" />
+						</column>	
+            <column name="alignment" order="130" numcolumns="2">
+								<widget type="select" fieldname="justiftexto1" icon="fas fa-align-center" translate="true">
+										<values title="left">left</values>
+										<values title="center">center</values>
+										<values title="right">right</values>
+                </widget>
+            </column>
+        </group>
+				<group name="text2" title="additional-text-2" valign="bottom" icon="fas fa-file-lines" numcolumns="12">
+            <column name="location" order="100" numcolumns="4">
+								<widget type="select" fieldname="posiciontexto2" icon="fas fa-up-down" translate="true">
+										<values title="dont-show">0</values>
+										<values title="before-invoice-data">2</values>
+										<values title="after-invoice-data">3</values>
+										<values title="after-detail-lines">4</values>
+										<values title="before-tax">5</values>
+										<values title="footer-before-text-1">6</values>
+										<values title="footer-after-text-1">7</values>
+										<values title="new-page-before-text-1">8</values>
+										<values title="new-page-after-text-1">9</values>
+                </widget>
+            </column>
+            <column name="size" order="110" numcolumns="2">
+                <widget type="number" fieldname="medidatexto2" icon="fas fa-text-height" decimal="0" min="6" max="20" step="1" />
+            </column>
+						<column name="color" order="120" numcolumns="2">
+								<widget type="color" fieldname="colortexto2" icon="fas fa-palette" />
+						</column>	
+						<column name="alignment" order="130" numcolumns="2">
+								<widget type="select" fieldname="justiftexto2" icon="fas fa-align-center" translate="true">
+										<values title="left">left</values>
+										<values title="center">center</values>
+										<values title="right">right</values>
+                </widget>
+            </column>
+            <column name="write-text-here" order="150" numcolumns="12">
+                <widget type="textarea" fieldname="texto2" maxlength="1000" rows="2" />
+            </column>
+        </group>
+    </columns>
+		<rows>
+			<row type="actions">
+					<button type="js" label="default" color="secondary" icon="fas fa-rotate-left" action="
+							document.getElementsByName('posicionlogo')[0].value=0;
+							document.getElementsByName('margenlogo')[0].value=0;
+							document.getElementsByName('medidalogo')[0].value=100;
+							document.getElementsByName('espaciomaximoempresa')[0].value=280;
+							document.getElementsByName('ocultarprovincia')[0].checked=false;
+							document.getElementsByName('ocultarpais')[0].checked=false;
+							document.getElementsByName('mostraralmacen')[0].value=' ';
+							document.getElementsByName('tituloalmacen')[0].value='';
+							document.getElementsByName('mostraralmacentel')[0].checked=false;
+							document.getElementsByName('ref2')[0].value=2;
+							document.getElementsByName('ocultarreferenciasfact')[0].checked=false;
+							document.getElementsByName('colorcabecera')[0].value='#E9E9E9';
+							document.getElementsByName('colorfilas')[0].value='#EDEDED';
+							document.getElementsByName('espaciofilas')[0].value=4;
+							document.getElementsByName('ocultarreferenciaprod')[0].checked=false;
+							document.getElementsByName('ocultartablaimpuestos')[0].checked=false;
+							document.getElementsByName('pagoyvencimiento')[0].value=3;
+							document.getElementsByName('traducirformaspago')[0].checked=true;
+							document.getElementsByName('posiciontexto1')[0].value=7;
+							document.getElementsByName('medidatexto1')[0].value=8;
+							document.getElementsByName('colortexto1')[0].value='#555555';
+							document.getElementsByName('justiftexto1')[0].value='left';
+							document.getElementsByName('posiciontexto2')[0].value=7;
+							document.getElementsByName('medidatexto2')[0].value=8;
+							document.getElementsByName('colortexto2')[0].value='#555555';
+							document.getElementsByName('justiftexto2')[0].value='left';
+							document.getElementById('formSettingsInvoice').submit();
+					"/>
+			</row>
+		</rows>
+</view>

@@ -1,0 +1,79 @@
+{#
+* Copyright (C) 2019-2025 Carlos Garcia Gomez <carlos@facturascripts.com>
+* Author Carlos Garcia Gomez <carlos@facturascripts.com>
+#}
+
+<div class="card shadow mb-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md">
+                <p>{{ trans('connect-a-printer-p') }}</p>
+                <div class="dropdown d-inline-block me-1">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="fa-solid fa-download me-1"></i> {{ trans('download-app') }}
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"
+                           href="https://megacity20.fra1.digitaloceanspaces.com/software/mc20printer/mc20printer-1.0.0%20Setup.exe">
+                            <i class="fa-brands fa-windows fa-fw me-1"></i> Windows 10/11 (64 bits)
+                        </a>
+                        <a class="dropdown-item"
+                           href="https://megacity20.fra1.digitaloceanspaces.com/software/mc20printer/mc20printer-darwin-x64-1.1.0.zip">
+                            <i class="fa-brands fa-apple fa-fw me-1"></i> Mac
+                        </a>
+                        <a class="dropdown-item"
+                           href="https://megacity20.fra1.digitaloceanspaces.com/software%2Fmc20printer%2Fmc20printer_1.1.0_amd64.deb">
+                            <i class="fa-brands fa-linux fa-fw me-1"></i> Linux (.deb)
+                        </a>
+                        <a class="dropdown-item"
+                           href="https://megacity20.fra1.digitaloceanspaces.com/software/mc20printer/mc20printer-1.0-1.x86_64.rpm">
+                            <i class="fa-brands fa-linux fa-fw me-1"></i> Linux (.rpm)
+                        </a>
+                    </div>
+                </div>
+                <h1 class="h4 mt-5 mb-1">URL:</h1>
+                <div class="d-flex align-items-center gap-2">
+                    <code id="appUrl">{{ fsc.getAppUrl() }}</code>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard('appUrl')" title="{{ trans('copy') }}">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+                <h2 class="h4 mt-4 mb-1">{{ trans('api-key') }}:</h2>
+                <div class="d-flex align-items-center gap-2">
+                    <code id="appKey">{{ fsc.getAppKey() }}</code>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard('appKey')" title="{{ trans('copy') }}">
+                        <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ asset('Dinamic/Assets/Images/printer-app.png') }}" alt="app" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function copyToClipboard(elementId) {
+        const element = document.getElementById(elementId);
+        const text = element.textContent;
+
+        navigator.clipboard.writeText(text).then(function() {
+            // Mostrar feedback visual
+            const button = element.nextElementSibling;
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i class="fa-solid fa-check"></i>';
+            button.classList.remove('btn-outline-secondary');
+            button.classList.add('btn-success');
+
+            setTimeout(function() {
+                button.innerHTML = originalHTML;
+                button.classList.remove('btn-success');
+                button.classList.add('btn-outline-secondary');
+            }, 2000);
+        }).catch(function(err) {
+            console.error('Error al copiar al portapapeles:', err);
+            alert('{{ trans('error-copying-to-clipboard') }}');
+        });
+    }
+</script>

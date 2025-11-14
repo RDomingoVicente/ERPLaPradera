@@ -1,0 +1,15 @@
+{
+    "code": 64,
+    "message": "Cannot redeclare FacturaScripts\\Plugins\\ParseaFacturas\\Controller\\Invoice2DataParser::__construct()",
+    "file": "\/Plugins\/ParseaFacturas\/Controller\/Invoice2DataParser.php",
+    "line": 23,
+    "hash": "a924a8dca57523cf8d70b85855a91bb0",
+    "url": "\/Invoice2DataParser",
+    "ip": "83.55.87.138",
+    "report_url": "https:\/\/facturascripts.com\/errores\/a924a8dca57523cf8d70b85855a91bb0",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2Fa924a8dca57523cf8d70b85855a91bb0",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

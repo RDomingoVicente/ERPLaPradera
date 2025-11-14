@@ -1,0 +1,15 @@
+{
+    "code": 0,
+    "message": "Unable to find template \"Invoice2DataParser.html.twig\" (looked into: \/Plugins\/ParseaFacturas\/View, \/Plugins\/Tickets\/View, \/Plugins\/Verifactu\/Extension\/View, \/Plugins\/Verifactu\/View, \/Core\/View).\n\nStack trace:\n#0 \/vendor\/twig\/twig\/src\/Loader\/FilesystemLoader.php(131): Twig\\Loader\\FilesystemLoader->findTemplate('Invoice2DataPar...')\n#1 \/vendor\/twig\/twig\/src\/Environment.php(290): Twig\\Loader\\FilesystemLoader->getCacheKey('Invoice2DataPar...')\n#2 \/vendor\/twig\/twig\/src\/Environment.php(343): Twig\\Environment->getTemplateClass('Invoice2DataPar...')\n#3 \/vendor\/twig\/twig\/src\/Environment.php(306): Twig\\Environment->load('Invoice2DataPar...')\n#4 \/Core\/Html.php(92): Twig\\Environment->render('Invoice2DataPar...', Array)\n#5 \/Core\/Response.php(232): FacturaScripts\\Core\\Html::render('Invoice2DataPar...', Array)\n#6 \/Core\/Base\/Controller.php(295): FacturaScripts\\Core\\Response->view('Invoice2DataPar...', Array)\n#7 \/Core\/Kernel.php(430): FacturaScripts\\Core\\Base\\Controller->run()\n#8 \/Core\/Kernel.php(198): FacturaScripts\\Core\\Kernel::runController('\/Invoice2DataPa...')\n#9 \/index.php(64): FacturaScripts\\Core\\Kernel::run('\/Invoice2DataPa...')\n#10 {main}",
+    "file": "\/vendor\/twig\/twig\/src\/Loader\/FilesystemLoader.php",
+    "line": 227,
+    "hash": "7ccba1422daa633730bccfa6b84a64a3",
+    "url": "\/Invoice2DataParser",
+    "ip": "83.55.87.138",
+    "report_url": "https:\/\/facturascripts.com\/errores\/7ccba1422daa633730bccfa6b84a64a3",
+    "report_qr": "https:\/\/api.qrserver.com\/v1\/create-qr-code\/?size=150x150&data=https%3A%2F%2Ffacturascripts.com%2Ferrores%2F7ccba1422daa633730bccfa6b84a64a3",
+    "core_version": 2025.5,
+    "php_version": "8.4.14",
+    "os": "Linux",
+    "plugin_list": "Verifactu,FacturaPDF1,Tickets,ParseaFacturas"
+}

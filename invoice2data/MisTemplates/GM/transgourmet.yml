@@ -1,0 +1,90 @@
+issuer: Transgourmet Iberica S.A.U.
+keywords:
+  - Transgourmet
+  - GM CASH
+  - TRANSGOURMET IBERICA
+  - cash&carry
+
+fields:
+  # Información del proveedor
+  invoice_number: FACTURA\s+(\d+)
+  date: FECHA\s*(\d{2}-\d{2}-\d{4})
+  delivery_note: ALBARAN\s+(\d+)
+  
+  # Información del cliente
+  customer_name: CLIENTE\s+NIF/CIF\s+\d+[A-Z]?\s+(.*?)(?=DIRECCIÓN|$)
+  customer_nif: NIF/CIF\s+(\d+[A-Z]?)
+  customer_address: DIRECCIÓN FISCAL\s+(.*?)\s+N\.I\.F\.
+  customer_phone: Telf:\s*(\d+)
+  
+  # Información del vendedor
+  seller_cif: CIF\s+(ES\s*[A-Z]\d+)
+  seller_address: Pol\.Emporda Internacional.*?(\d{5})\s+Vilamalla
+  seller_register: REGISTRO MERCANTIL.*?CIF\s+(ES\s*[A-Z]\d+)
+  
+  # Información de pago
+  payment_method: Forma de Pago\s+(.*?)\s+Cobrador
+  payment_status: (PAGADO)
+  
+  # Totales
+  amount: TOTAL FACTURA\s+([\d,\.]+)
+  subtotal_4: 'Base Imponible.*?4,00\s+([\d,\.]+)'
+  subtotal_10: 'Base Imponible.*?10,00\s+([\d,\.]+)'
+  subtotal_21: 'Base Imponible.*?21,00\s+([\d,\.]+)'
+  
+  vat_4: '4,00.*?([\d,\.]+)\s+\d+,\d+'
+  vat_10: '10,00.*?([\d,\.]+)\s+\d+,\d+'
+  vat_21: '21,00.*?([\d,\.]+)\s+\d+,\d+'
+  
+  discount: Aplicación de Promociones\s+([\d,\.]+)
+
+options:
+  currency: EUR
+  date_formats:
+    - '%d-%m-%Y'
+  
+  decimal_separator: ','
+  
+  # Reemplazar separadores para procesamiento numérico
+  replace:
+    - [',', '.']
+
+lines:
+  start: DESCRIPCIÓN.*?PRECIO U\.
+  end: Base Imponible
+  first_line: '^\d{8}\s+'
+  last_line: '^Base Imponible'
+  
+  types:
+    - ^\d{8}\s+(.+?)\s+([\d,\.]+)%\s+([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)\s+(\d+),00
+  
+  fields:
+    - code
+    - description
+    - vat_rate
+    - unit_price
+    - quantity_type
+    - price_with_vat
+    - price_without_vat
+    - quantity
+
+tables:
+  - name: items
+    header: CODIGO\s+DESCRIPCIÓN
+    body: '(\d{8})\s+(.+?)\s+([\d,]+%)\s+([\d,\.]+)\s+'
+    footer: Base Imponible
+    
+    columns:
+      - name: code
+        type: string
+      - name: description
+        type: string
+      - name: vat_rate
+        type: string
+      - name: unit_price
+        type: float
+      - name: quantity
+        type: float
+      - name: subtotal
+        type: float
+        

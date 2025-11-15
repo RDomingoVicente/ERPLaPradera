@@ -1,0 +1,48 @@
+issuer: TUDIS
+fields:
+  invoice_number: FACTURA:\s+(\w+\-\d+)
+  date:
+    parser: regex
+    regex: FECHA:\s+(\d{2}/\d{2}/\d{4})
+    date_format: "%d/%m/%Y"
+  amount:
+        # (?ms) activa los modos multilínea y punto que coincide con salto de línea.
+        # El patrón busca la línea del encabezado y luego el valor numérico en la línea siguiente.
+        # Los espacios en blanco (\s+) y el salto de línea (\n) son cruciales aquí.
+        # [0-9.,]+ coincide con números con comas o puntos.
+        # \\s* coincide con cero o más espacios/saltos de línea.
+        # Importante: Asegúrate de que el patrón capture solo el valor que deseas (XXX.XX).
+    parser: regex
+    regex: TOTAL\s*A\s*PAGAR\s*\n\s*[0-9.,]+\s*[0-9.,]+\s*[0-9.,]+\s*[0-9.,]+\s*[0-9.,]+\s*([0-9.,]+)
+  local:
+    parser: regex
+    regex: P\w+\.\s*1\s*\w+\s*\d+\s*\n([0-9]+\s*\w+\s*\w+\.\s*\w+\s*\w+)
+  direcc: 
+    parser: regex
+    regex: P\w+\.\s*1\s*\w+\s*\d+\s*\n[0-9]+\s*\w+\s*\w+\.\s*\w+\s*\w+\s*[0-9]+\s*\w+\s*\w+\s*\w+\s*\n(\w+\s*\w+\s*\w+)
+  cliente:
+    parser: regex
+    regex: P\w+\.\s*1\s*\w+\s*\d+\s*\n[0-9]+\s*\w+\s*\w+\.\s*\w+\s*\w+\s*[0-9]+\s*(\w+\s*\w+\s*\w+)
+  nif:
+    parser: regex
+    regex: NIF:\s*([0-9]+\w)
+  detail_lines:
+    parser: lines
+    start: Importe:\s*[0-9.,]+|Total\s*albarán
+    end: \s*Albarán|FACTURA|N\º\s*R\.S\.|\s*BASE\s+IMPONIBLE|
+    line: (?P<codigo>\d+)\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+(?P<unidades>[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<total>[0-9.,]+)\s*
+  resumen_lines:
+    parser: lines
+    start: 'BASE\s*IMPONIBLE'
+    end: '\Z'
+    line:
+      - '(?P<base_imponible>[0-9.,]+)\s+(?P<percent_iva>[0-9.,]+)\s+(?P<importe_iva>[0-9.,]+)'
+keywords:
+  - FACTURA
+  - BASE IMPONIBLE
+options:
+  currency: EUR
+  date_formats:
+    - '%d/%m/%Y'
+  decimal_separator: ','
+

@@ -5,7 +5,7 @@ import datetime  # noqa
 from typing import Any
 from typing import Dict
 from typing import List
-
+import dateparser
 
 def write_to_file(
     data: List[Dict[str, Any]], path: str, date_format: str = "%Y-%m-%d"
@@ -50,6 +50,8 @@ def write_to_file(
             csv_items = []
             for k, v in line.items():
                 if k.startswith("date") or k.endswith("date"):
+                    if isinstance(v, str):
+                        v = dateparser.parse(v)
                     v = v.strftime(date_format)  # Assuming v is a date object
                 csv_items.append(v)
             writer.writerow(csv_items)

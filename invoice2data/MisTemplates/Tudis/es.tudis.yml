@@ -29,8 +29,8 @@ fields:
   detail_lines:
     parser: lines
     start: Importe:\s*[0-9.,]+|Total\s*albarán
-    end: \s*Albarán|FACTURA|N\º\s*R\.S\.|\s*BASE\s+IMPONIBLE|
-    line: (?P<codigo>\d+)\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+(?P<unidades>[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<total>[0-9.,]+)\s*
+    end: \s*Albarán|FACTURA|N\º\s*R\.S\.|\s*BASE\s+IMPONIBLE
+    line: (?P<codigo>\d+)\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+\w+\s+(?P<precio>[0-9.,]+)\s+(?P<total>[0-9.,]+)
   resumen_lines:
     parser: lines
     start: 'BASE\s*IMPONIBLE'

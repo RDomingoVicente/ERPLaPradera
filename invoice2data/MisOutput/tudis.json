@@ -5,6 +5,260 @@
         "date": "31/10/2025",
         "amount": "1.422,55",
         "nif": "72371946P",
+        "detail_lines": [
+            {
+                "codigo": "357",
+                "description": "TARRINA WHISKY CERAMIC 6x150ml",
+                "cantidad": "1,000",
+                "precio": "20,400",
+                "total": "20,40"
+            },
+            {
+                "codigo": "385",
+                "description": "Cono Menu Vai/Choco 40x110ml",
+                "cantidad": "1,000",
+                "precio": "23,200",
+                "total": "23,20"
+            },
+            {
+                "codigo": "6932",
+                "description": "HELLM. MAYONESA ORIGINAL 5L",
+                "cantidad": "2,000",
+                "precio": "19,950",
+                "total": "39,90"
+            },
+            {
+                "codigo": "21120",
+                "description": "Pizza YORK 6x500 Gr",
+                "cantidad": "2,000",
+                "precio": "26,280",
+                "total": "52,56"
+            },
+            {
+                "codigo": "74005",
+                "description": "JUDIA VERDE PLANA 6x1 KG FRUDE",
+                "cantidad": "2,000",
+                "precio": "1,800",
+                "total": "3,60"
+            },
+            {
+                "codigo": "74102",
+                "description": "MENESTRA SIN GUISANTES 6X1 FIN",
+                "cantidad": "2,000",
+                "precio": "3,130",
+                "total": "6,26"
+            },
+            {
+                "codigo": "74401",
+                "description": "AVIKO PATATA 3/8 5x2,5 KG.",
+                "cantidad": "1,000",
+                "precio": "4,950",
+                "total": "24,75"
+            },
+            {
+                "codigo": "74430",
+                "description": "EUROF PATATA BRAVA 4x2,5 K",
+                "cantidad": "1,000",
+                "precio": "5,900",
+                "total": "23,60"
+            },
+            {
+                "codigo": "75253",
+                "description": "RABAS CALAMAR 4x1 Kg TUDIS",
+                "cantidad": "1,000",
+                "precio": "8,900",
+                "total": "35,60"
+            },
+            {
+                "codigo": "75914",
+                "description": "CRUNCH CHIK BURGUER 4x1,5 135g",
+                "cantidad": "1,000",
+                "precio": "17,100",
+                "total": "68,40"
+            },
+            {
+                "codigo": "79228",
+                "description": "GILDA ANCHOA 2x50 UD AI",
+                "cantidad": "1,000",
+                "precio": "21,500",
+                "total": "43,00"
+            },
+            {
+                "codigo": "79229",
+                "description": "GILDA BOQUERON 2x50 UD AI",
+                "cantidad": "1,000",
+                "precio": "21,500",
+                "total": "43,00"
+            },
+            {
+                "codigo": "84100",
+                "description": "BACON PZA. ALMIREZ variable                               1,000 C",
+                "cantidad": "6,140",
+                "precio": "7,900",
+                "total": "48,51"
+            },
+            {
+                "codigo": "91222",
+                "description": "FILETE MERLUZA C/P 6/8 5 KG",
+                "cantidad": "2,000",
+                "precio": "44,750",
+                "total": "89,50"
+            },
+            {
+                "codigo": "92442",
+                "description": "GAMBON Nº3 30/40 2 KG",
+                "cantidad": "2,000",
+                "precio": "19,900",
+                "total": "39,80"
+            },
+            {
+                "codigo": "92720",
+                "description": "ANGULEIRAS TUDIS 2x100 gr.",
+                "cantidad": "3,000",
+                "precio": "1,750",
+                "total": "5,25"
+            },
+            {
+                "codigo": "94953",
+                "description": "BASE TORTILLA C/CEBOLLA 6x1 KG",
+                "cantidad": "1,000",
+                "precio": "19,800",
+                "total": "19,80"
+            },
+            {
+                "codigo": "96610",
+                "description": "HAMBURGUESA BUEY/VACA 16u 200g",
+                "cantidad": "2,000",
+                "precio": "39,840",
+                "total": "79,68"
+            },
+            {
+                "codigo": "99240",
+                "description": "PORCION TOMATE UNTAR 45x 20 Gr",
+                "cantidad": "2,000",
+                "precio": "9,950",
+                "total": "19,90"
+            },
+            {
+                "codigo": "201427",
+                "description": "BARRA GALLEGA DA TERRA SANBRANDAN",
+                "cantidad": "1,000",
+                "precio": "37,600",
+                "total": "30,08"
+            },
+            {
+                "codigo": "74401",
+                "description": "AVIKO PATATA 3/8 5x2,5 KG.",
+                "cantidad": "1,000",
+                "precio": "4,950",
+                "total": "24,75"
+            },
+            {
+                "codigo": "81404",
+                "description": "ATUN LOMO S/P MEDIOS VACIO CAM                            0,300 C",
+                "cantidad": "7,220",
+                "precio": "10,950",
+                "total": "79,06"
+            },
+            {
+                "codigo": "95368",
+                "description": "MINI CACHOPO JAMON-QUE-PIM 2,5",
+                "cantidad": "2,000",
+                "precio": "39,750",
+                "total": "79,50"
+            },
+            {
+                "codigo": "110955",
+                "description": "KNORR CALDO SABOR CARNE 6X1KG",
+                "cantidad": "1,000",
+                "precio": "9,450",
+                "total": "9,45"
+            },
+            {
+                "codigo": "393835",
+                "description": "KNORR CALDO PAELLA 6x900G",
+                "cantidad": "4,000",
+                "precio": "13,060",
+                "total": "52,24"
+            },
+            {
+                "codigo": "9625",
+                "description": "BOTELLA BARBACOA 8x950g CHOVI",
+                "cantidad": "4,000",
+                "precio": "4,140",
+                "total": "16,56"
+            },
+            {
+                "codigo": "9626",
+                "description": "BOTELLA KETCHUP 8x925g CHOVI",
+                "cantidad": "1,000",
+                "precio": "4,140",
+                "total": "33,12"
+            },
+            {
+                "codigo": "9641",
+                "description": "TOMATE NATURAL RALLADO 6x1000g",
+                "cantidad": "1,000",
+                "precio": "5,700",
+                "total": "5,70"
+            },
+            {
+                "codigo": "21120",
+                "description": "Pizza YORK 6x500 Gr",
+                "cantidad": "1,000",
+                "precio": "26,280",
+                "total": "26,28"
+            },
+            {
+                "codigo": "72632",
+                "description": "ALMEJA JAPONICA 70/90 6x1 KG.",
+                "cantidad": "1,000",
+                "precio": "11,900",
+                "total": "71,40"
+            },
+            {
+                "codigo": "74401",
+                "description": "AVIKO PATATA 3/8 5x2,5 KG.",
+                "cantidad": "1,000",
+                "precio": "4,950",
+                "total": "24,75"
+            },
+            {
+                "codigo": "75253",
+                "description": "RABAS CALAMAR 4x1 Kg TUDIS",
+                "cantidad": "1,000",
+                "precio": "8,900",
+                "total": "35,60"
+            },
+            {
+                "codigo": "84100",
+                "description": "BACON PZA. ALMIREZ variable                               1,000 C",
+                "cantidad": "6,260",
+                "precio": "7,900",
+                "total": "49,45"
+            },
+            {
+                "codigo": "91052",
+                "description": "DORADA EVISCERADA 200/300 5 Kg",
+                "cantidad": "1,000",
+                "precio": "43,500",
+                "total": "43,50"
+            },
+            {
+                "codigo": "94953",
+                "description": "BASE TORTILLA C/CEBOLLA 6x1 KG",
+                "cantidad": "1,000",
+                "precio": "19,800",
+                "total": "19,80"
+            },
+            {
+                "codigo": "209182",
+                "description": "PAN RUSTIQUE 21 UD.",
+                "cantidad": "1,000",
+                "precio": "13,530",
+                "total": "13,53"
+            }
+        ],
         "resumen_lines": [
             {
                 "base_imponible": "151,32",

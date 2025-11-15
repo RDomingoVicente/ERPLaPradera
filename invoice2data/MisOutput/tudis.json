@@ -1,0 +1,23 @@
+[
+    {
+        "issuer": "TUDIS",
+        "invoice_number": "M5-2344",
+        "date": "31/10/2025",
+        "amount": "1.422,55",
+        "nif": "72371946P",
+        "resumen_lines": [
+            {
+                "base_imponible": "151,32",
+                "percent_iva": "4,00",
+                "importe_iva": "6,05"
+            },
+            {
+                "base_imponible": "1.150,16",
+                "percent_iva": "10,00",
+                "importe_iva": "115,02"
+            }
+        ],
+        "currency": "EUR",
+        "desc": "Invoice from TUDIS"
+    }
+]

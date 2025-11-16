@@ -1,0 +1,49 @@
+issuer: BEBIDAS A. MARTIN
+fields:
+  invoice_number:
+    parser: regex
+    regex: '\s+(\d{3}.\d{3})\s+(?:\d{2}/\d{2}/\d{4})'  
+  
+  date:
+    parser: regex
+    regex: '\s+(?:\d{3}.\d{3})\s+(\d{2}/\d{2}/\d{4})'  
+    date_format: "%d/%m/%Y"
+  
+  amount:
+    parser: regex
+    regex: 'SPD\s+[0-9.,]+\s+([0-9.,]+)'
+  
+  nif_cliente:
+    parser: regex
+    regex: '\s+(\d{8}[A-Z])'
+  
+  cliente_nombre:
+    parser: regex
+    regex: '\s*([A-Z]+\s+[A-Z]+\s+CASTRO\s+CASTRO)'
+  
+  detail_lines:
+    parser: lines
+    start: 'ALBARAN\s+NRO|Desglose\s+tasa'
+    end: 'TOTAL\s+ALB.IVA\s+INC'
+    line:
+      - '(?P<codigo>[A-Z]{1,2}\d{2,3})\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<importe>[0-9.,]+)\s+(?P<porc_iva>[0-9.,]+)'
+      - '(?P<codigo>[A-Z]{1,2}\d{2,3})\s+(?P<description>.+?)\s+(?P<cantidad>-?[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<importe>[0-9.,]+)-?\s*(?P<porc_iva>[0-9.,]+)'
+      - '(?P<codigo>\d{4})\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<importe>[0-9.,]+)\s+(?P<porc_iva>[0-9.,]+)'
+      - '\s*(?P<codigo>SIG)\s+(?P<description>.+?)\s+(?P<cantidad>[0-9.,]+)\s+(?P<precio>[0-9.,]+)\s+(?P<porc_iva>[0-9.,]+)\s*$'
+
+  resumen_lines:
+    parser: lines
+    start: 'IMP\.BRUTO'
+    end: 'SPD|GIRO'
+    line: '^\s*(?P<imp_bruto>[0-9.,]+)\s+(?P<envases>[0-9.,]+)-?\s+(?P<ptoverde>[0-9.,]+)\s+(?P<base_imponible>[0-9.,]+)\s+(?P<percent_iva>[0-9.,]+)\s+(?P<importe_iva>[0-9.,]+)'
+
+keywords:
+  - BEBIDAS A. MARTIN
+  - FACTURA
+  - IMP.BRUTO
+  
+options:
+  currency: EUR
+  date_formats:
+    - '%d/%m/%Y'
+  decimal_separator: ','

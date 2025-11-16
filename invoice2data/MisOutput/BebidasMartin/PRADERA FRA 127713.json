@@ -1,0 +1,265 @@
+[
+    {
+        "issuer": "BEBIDAS A. MARTIN",
+        "invoice_number": "127.713",
+        "date": "01/10/2025",
+        "amount": "2.105,51",
+        "nif_cliente": "72371946P",
+        "cliente_nombre": "STEPHANIE MAGALY CASTRO CASTRO",
+        "detail_lines": [
+            {
+                "codigo": "0210",
+                "description": "AZPILICUETA CRIAN 3/4",
+                "cantidad": "12,000",
+                "precio": "7,5500",
+                "importe": "90,60",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "A027",
+                "description": "M.PINOS 6U 1500 PET",
+                "cantidad": "4,000",
+                "precio": "4,8000",
+                "importe": "19,20",
+                "porc_iva": "10,0"
+            },
+            {
+                "codigo": "A055",
+                "description": "M.PINOS 500 PET 35U",
+                "cantidad": "2,000",
+                "precio": "16,7000",
+                "importe": "33,40",
+                "porc_iva": "10,0"
+            },
+            {
+                "codigo": "L041",
+                "description": "BIF TROPICAL ZERO TAP",
+                "cantidad": "1,000",
+                "precio": "12,3500",
+                "importe": "12,35",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "R014",
+                "description": "KAS 1/5 N.RET 24U NAR",
+                "cantidad": "2,000",
+                "precio": "30,9600",
+                "importe": "30,96",
+                "porc_iva": "30,96"
+            },
+            {
+                "codigo": "R015",
+                "description": "KAS 1/5 N.RET 24U LIM",
+                "cantidad": "2,000",
+                "precio": "30,9600",
+                "importe": "30,96",
+                "porc_iva": "30,96"
+            },
+            {
+                "codigo": "R061",
+                "description": "COCA COLA 330 LATA",
+                "cantidad": "24",
+                "precio": "2,000",
+                "importe": "37,4400",
+                "porc_iva": "48,67"
+            },
+            {
+                "codigo": "R083",
+                "description": "CASERA 500 PET 12U",
+                "cantidad": "4,000",
+                "precio": "15,3600",
+                "importe": "33,79",
+                "porc_iva": "27,65"
+            },
+            {
+                "codigo": "R136",
+                "description": "AQUARIUS LIM LATA 24U",
+                "cantidad": "2,000",
+                "precio": "39,6000",
+                "importe": "43,56",
+                "porc_iva": "35,64"
+            },
+            {
+                "codigo": "R142",
+                "description": "BITTER KAS 200N.R 24U",
+                "cantidad": "1,000",
+                "precio": "37,6800",
+                "importe": "16,96",
+                "porc_iva": "20,72"
+            },
+            {
+                "codigo": "R186",
+                "description": "C.COLA 330 LATA ZERO",
+                "cantidad": "2,000",
+                "precio": "37,4400",
+                "importe": "48,67",
+                "porc_iva": "26,21"
+            },
+            {
+                "codigo": "V169",
+                "description": "COFRADE TEMPRANILLO",
+                "cantidad": "300,000",
+                "precio": "3,5000",
+                "importe": "1050,00",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "V253",
+                "description": "JOVEN DE SILOS 750ML",
+                "cantidad": "6,000",
+                "precio": "7,6000",
+                "importe": "45,60",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "V615",
+                "description": "DOMINIO MANCILES ROSA",
+                "cantidad": "12,000",
+                "precio": "3,0200",
+                "importe": "36,24",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "V693",
+                "description": "S.SOTILLO JOVEN",
+                "cantidad": "11,000",
+                "precio": "4,4000",
+                "importe": "48,40",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "X591",
+                "description": "ORUJ AGTE 3L PICUE38¦",
+                "cantidad": "1,000",
+                "precio": "23,3000",
+                "importe": "23,30",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "A035",
+                "description": "M.PINOS330 GAS NR 24U",
+                "cantidad": "1,000",
+                "precio": "22,5000",
+                "importe": "5,63",
+                "porc_iva": "16,88"
+            },
+            {
+                "codigo": "C151",
+                "description": "MAHOU 1/3 RET 5 ESTRE",
+                "cantidad": "10,000",
+                "precio": "22,5000",
+                "importe": "225,00",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "EN35",
+                "description": "CAJA MAHOU 1/3",
+                "cantidad": "11,000",
+                "precio": "3,5000",
+                "importe": "38,50",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "PA01",
+                "description": "PALET EUR",
+                "cantidad": "1,000",
+                "precio": "7,2000",
+                "importe": "7,20",
+                "porc_iva": "10,0"
+            },
+            {
+                "codigo": "EN37",
+                "description": "BARRIL VACIO 20L.",
+                "cantidad": "-5,000",
+                "precio": "12,0200",
+                "importe": "60,10",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "EN28",
+                "description": "BARRIL VACIO 30L.",
+                "cantidad": "-2,000",
+                "precio": "12,0200",
+                "importe": "24,04",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "V283",
+                "description": "FUENTEAM.B&B TINTO15L",
+                "cantidad": "-1,000",
+                "precio": "19,9700",
+                "importe": "19,97",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "AGUA 250 35U",
+                "cantidad": "1,000",
+                "precio": "0,24",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "PACK AGUA 1.5 PET",
+                "cantidad": "12,000",
+                "precio": "1,44",
+                "porc_iva": "10,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "REFRESCO 1/5 NR 2",
+                "cantidad": "5,000",
+                "precio": "0,90",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "REFRESCO LATA 330",
+                "cantidad": "6,000",
+                "precio": "0,36",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "REFRESCO 0.5 PET",
+                "cantidad": "4,000",
+                "precio": "0,72",
+                "porc_iva": "21,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "AGUA 0.5 PET",
+                "cantidad": "4,000",
+                "precio": "1,16",
+                "porc_iva": "10,0"
+            },
+            {
+                "codigo": "SIG",
+                "description": "CAJA PRISMA BRIK",
+                "cantidad": "1,000",
+                "precio": "0,07",
+                "porc_iva": "21,0"
+            }
+        ],
+        "resumen_lines": [
+            {
+                "imp_bruto": "1.709,87",
+                "envases": "45,64",
+                "ptoverde": "2,29",
+                "base_imponible": "1.668,02",
+                "percent_iva": "21,0",
+                "importe_iva": "350,28"
+            },
+            {
+                "imp_bruto": "69,48",
+                "envases": "7,20",
+                "ptoverde": "2,60",
+                "base_imponible": "79,28",
+                "percent_iva": "10,0",
+                "importe_iva": "7,93"
+            }
+        ],
+        "currency": "EUR",
+        "desc": "Invoice from BEBIDAS A. MARTIN"
+    }
+]

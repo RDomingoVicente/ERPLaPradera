@@ -3,11 +3,18 @@ from flask_cors import CORS
 from invoice2data import extract_data
 from invoice2data.extract.loader import read_templates
 import os
+import configparser
 
 app = Flask(__name__)
 CORS(app)
 
-UPLOAD_FOLDER = 'uploads'
+# Cargar configuración
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+UPLOAD_FOLDER = config['DEFAULT']['UPLOAD_FOLDER']
+TEMPLATE_FOLDER_BASE = config['DEFAULT']['TEMPLATE_FOLDER']
+
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
 
@@ -37,7 +44,7 @@ def parse_invoice():
         
         # Parsear la factura con invoice2data
         # Especificar el template basado en el proveedor
-        template_folder = f'../MisTemplates/{provider}'
+        template_folder = os.path.join(TEMPLATE_FOLDER_BASE, provider)
         print(f" path plantilla: {template_folder}")
         
         # Verificar si existe la carpeta del template
@@ -90,4 +97,7 @@ def parse_invoice():
 
 if __name__ == '__main__':
     # host='0.0.0.0' permite conexiones desde otros contenedores Docker
-    app.run(debug=True, host='0.0.0.0', port=5500)
+    debug = config['FLASK'].getboolean('DEBUG')
+    host = config['FLASK']['HOST']
+    port = config['FLASK'].getint('PORT')
+    app.run(debug=debug, host=host, port=port)

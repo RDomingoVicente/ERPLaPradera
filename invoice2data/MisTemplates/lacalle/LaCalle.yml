@@ -1,0 +1,46 @@
+issuer: LACALLE ALBIZ
+fields:
+  invoice_number:
+    parser: regex
+    regex: '(\d{2}-\d{2}/\d{5})\s+(?:\d{2}/\d{2}/\d{4})'  
+
+  date:
+    parser: regex
+    regex: '(?:\d{2}-\d{2}/\d{5})\s+(\d{2}/\d{2}/\d{4})'
+    date_format: "%d/%m/%Y"
+  
+  amount:
+    parser: regex
+    regex: 'Bruto\s+Importe\s*\n\s*[0-9.,]+\s+([0-9.,]+)'
+  
+  nif_cliente:
+    parser: regex
+    regex: '(?:\d{2}-\d{2}/\d{5})\s+(?:\d{2}/\d{2}/\d{4})\s+(\d{8}[A-Z])'
+  
+  cliente_nombre:
+    parser: regex
+    #regex: 'BAR RESTAURANTE.*?\n\s*([A-Z\s,]+)\n\s*CL\.'
+    regex: '([A-Z]+\s+[A-Z]+,\s+[A-Z]+)\n\s*CL\.'
+ 
+  detail_lines:
+    parser: lines
+    start: 'Referencia\s+Descripción'
+    end: 'FORMA\s+DE\s+PAGO|Bruto'
+    line: '(?P<codigo>\d{4})\s+(?P<description>.+?)\s+(?P<cajas>\d+)\s+(?P<cantidad>[0-9.,]+)\s+(?P<precio>[0-9.,]+)(?:\w+)?\s+(?P<importe>[0-9.,]+)'
+  
+  resumen_lines:
+    parser: lines
+    start: 'Base\s+IVA\s+%IVA'
+    end: 'Sus\s+datos|Vencimiento'
+    line: '(?P<base_imponible>[0-9.,]+)\s+(?P<percent_iva>\d+)\s+(?P<importe_iva>[0-9.,]+)'
+
+keywords:
+  - LACALLE ALBIZ
+  - Factura
+  - Base IVA
+  
+options:
+  currency: EUR
+  date_formats:
+    - '%d/%m/%Y'
+  decimal_separator: ','

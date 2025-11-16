@@ -1,0 +1,130 @@
+[
+    {
+        "issuer": "LACALLE ALBIZ",
+        "invoice_number": "25-00/01142",
+        "date": "31/10/2025",
+        "amount": "1.038,73",
+        "nif_cliente": "72371946P",
+        "cliente_nombre": "CASTRO CASTRO, STEPHANIE",
+        "detail_lines": [
+            {
+                "codigo": "0842",
+                "description": "ATUN AC. GIRASOL RO-872 MIAU                                                          M250941",
+                "cajas": "1",
+                "cantidad": "12",
+                "precio": "5,790",
+                "importe": "69,48"
+            },
+            {
+                "codigo": "0077",
+                "description": "ESP. TARRO M580 6-9 DESTAPA LA HUERTA",
+                "cajas": "4102",
+                "cantidad": "1",
+                "precio": "12",
+                "importe": "2,930"
+            },
+            {
+                "codigo": "6038",
+                "description": "ACEITUNA GAZPACHA A15",
+                "cajas": "25293",
+                "cantidad": "4",
+                "precio": "12",
+                "importe": "12,830"
+            },
+            {
+                "codigo": "0131",
+                "description": "CENTRO TROCEADO LOZA",
+                "cajas": "4332",
+                "cantidad": "1",
+                "precio": "11,27",
+                "importe": "14,040"
+            },
+            {
+                "codigo": "4002",
+                "description": "ALUBIA ROJA granel                                                                    AR782",
+                "cajas": "1",
+                "cantidad": "10",
+                "precio": "4,800",
+                "importe": "48,00"
+            },
+            {
+                "codigo": "4013",
+                "description": "LENTEJA PARDINA granel",
+                "cajas": "703",
+                "cantidad": "1",
+                "precio": "10",
+                "importe": "2,500"
+            },
+            {
+                "codigo": "0842",
+                "description": "ATUN AC. GIRASOL RO-872 MIAU                                                          M250941",
+                "cajas": "1",
+                "cantidad": "12",
+                "precio": "5,790",
+                "importe": "69,48"
+            },
+            {
+                "codigo": "6038",
+                "description": "ACEITUNA GAZPACHA A15",
+                "cajas": "25293",
+                "cantidad": "2",
+                "precio": "6",
+                "importe": "12,830"
+            },
+            {
+                "codigo": "0166",
+                "description": "QUESO LACALLE SEMICURADO",
+                "cajas": "125194",
+                "cantidad": "1",
+                "precio": "6,115",
+                "importe": "10,380"
+            },
+            {
+                "codigo": "0047",
+                "description": "CH. BARBACOA LOZA",
+                "cajas": "251804",
+                "cantidad": "2",
+                "precio": "11,89",
+                "importe": "7,430"
+            },
+            {
+                "codigo": "6221",
+                "description": "PIPARRAS VINAG.VINO 1/2 G",
+                "cajas": "25291",
+                "cantidad": "1",
+                "precio": "6",
+                "importe": "8,130"
+            },
+            {
+                "codigo": "0842",
+                "description": "ATUN AC. GIRASOL RO-872 MIAU                                                          M250941",
+                "cajas": "1",
+                "cantidad": "12",
+                "precio": "5,790",
+                "importe": "69,48"
+            },
+            {
+                "codigo": "4002",
+                "description": "ALUBIA ROJA granel                                                                    AR782",
+                "cajas": "1",
+                "cantidad": "10",
+                "precio": "4,800",
+                "importe": "48,00"
+            }
+        ],
+        "resumen_lines": [
+            {
+                "base_imponible": "769,89",
+                "percent_iva": "10",
+                "importe_iva": "76,99"
+            },
+            {
+                "base_imponible": "184,47",
+                "percent_iva": "4",
+                "importe_iva": "7,38"
+            }
+        ],
+        "currency": "EUR",
+        "desc": "Invoice from LACALLE ALBIZ"
+    }
+]

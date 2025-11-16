@@ -1,90 +1,83 @@
-issuer: Transgourmet Iberica S.A.U.
-keywords:
-  - Transgourmet
-  - GM CASH
-  - TRANSGOURMET IBERICA
-  - cash&carry
+issuer: Transgourmet GM
 
 fields:
-  # Información del proveedor
-  invoice_number: FACTURA\s+(\d+)
-  date: FECHA\s*(\d{2}-\d{2}-\d{4})
-  delivery_note: ALBARAN\s+(\d+)
+  invoice_number:
+    parser: regex
+    regex: 'FACTURA\s+(\d{15})'
   
-  # Información del cliente
-  customer_name: CLIENTE\s+NIF/CIF\s+\d+[A-Z]?\s+(.*?)(?=DIRECCIÓN|$)
-  customer_nif: NIF/CIF\s+(\d+[A-Z]?)
-  customer_address: DIRECCIÓN FISCAL\s+(.*?)\s+N\.I\.F\.
-  customer_phone: Telf:\s*(\d+)
+  date:
+    parser: regex
+    regex: 'FECHA\s+(\d{2}-\d{2}-\d{4})'
+    date_format: "%d-%m-%Y"
   
-  # Información del vendedor
-  seller_cif: CIF\s+(ES\s*[A-Z]\d+)
-  seller_address: Pol\.Emporda Internacional.*?(\d{5})\s+Vilamalla
-  seller_register: REGISTRO MERCANTIL.*?CIF\s+(ES\s*[A-Z]\d+)
+  albaran:
+    parser: regex
+    regex: 'ALBARAN\s+(\d{9})'
   
-  # Información de pago
-  payment_method: Forma de Pago\s+(.*?)\s+Cobrador
-  payment_status: (PAGADO)
+  amount:
+    parser: regex
+    regex: 'TOTAL\s+FACTURA\s+([0-9.,]+)'
   
-  # Totales
-  amount: TOTAL FACTURA\s+([\d,\.]+)
-  subtotal_4: 'Base Imponible.*?4,00\s+([\d,\.]+)'
-  subtotal_10: 'Base Imponible.*?10,00\s+([\d,\.]+)'
-  subtotal_21: 'Base Imponible.*?21,00\s+([\d,\.]+)'
+  cliente_id:
+    parser: regex
+    regex: 'CLIENTE\s+(\d+)\s+NIF'
   
-  vat_4: '4,00.*?([\d,\.]+)\s+\d+,\d+'
-  vat_10: '10,00.*?([\d,\.]+)\s+\d+,\d+'
-  vat_21: '21,00.*?([\d,\.]+)\s+\d+,\d+'
+
+  cliente_nombre:
+    parser: regex
+    regex: '([A-Z]+\s+[A-Z]+\s+[A-Z]+\s+[A-Z]+)\s+\1'
+    
+  nif:
+    parser: regex
+    regex: 'NIF/CIF\s+(\d+[A-Z])'
   
-  discount: Aplicación de Promociones\s+([\d,\.]+)
+  direccion_fiscal:
+    parser: regex
+    regex: 'DIRECCIÓN\s+FISCAL.*?\n.*?\n([A-Z\s0-9,\.]+)\n(\d{5}-[A-Z\s]+)\n([A-Z]+)'
+  
+  telefono:
+    parser: regex
+    regex: 'Telf:\s+(\d{9})'
+
+  detail_lines:
+    parser: lines
+    start: 'ALIMENTACIÓN|BAZAR\s+Y\s+TEXTIL|\s*CODIGO|BEBIDAS|CARNICERIA|CHARCUTERIA|DERIVADOS\s+LACTEOS|DROG/PERF/HIGIENE|PLATOS\s+COCINADOS\s+Y\s+PRECOCINADO|QUESOS'
+    end: '\s+Página|PAGADO'
+    skip_line: '\s+Página\s+de|\s*Lote\s+:|^GM\s+CASH\s+BURGOS|^Horario|^Servicio|^ES$|^cash&carry|^sólo\s+profesionales|^\d+\.\d+/BU|^UE$|^N\.I\.F\.|^CENTRO\s+DE|^LAS\s+LODERAS|^VERA\s+CRUZ|^\d{5}-|^BURGOS$|^FACTURA|^TIPO\s+PRECIO|^CODIGO\s+DESCRIPCIÓN|^OFER\.|^ALIMENTACIÓN$|^BAZAR|^BEBIDAS$|^CARNICERIA$|^CHARCUTERIA$|^DERIVADOS|^DROG/PERF|^PLATOS\s+COCINADOS|^QUESOS$|^Transgourmet|^Pol\.Emporda|^REGISTRO|^Importe\s*$|^Importe\s*\*\s*$'
+    line: (?P<codigo>\d{8})\s+(?P<description>.+?)\s+(?P<iva>\d+,\d+%)\s+(?P<cantidad>[0-9.,]+)\s+(?P<unidades>[0-9.,]+)\s+(?:\w+\s+)?(?P<precio_sin_iva>[0-9.,]+)\s+(?P<precio_con_iva>[0-9.,]+)\s+(?P<total>[0-9.,]+)
+    
+    types:
+      - codigo: str
+      - description: str
+      - iva: str
+      - cantidad: float
+      - precio_sin_iva: float
+      - precio_con_iva: float
+      - total: float
+  base_imponible:
+    parser: regex
+    regex: (?:Aplicación de Promociones\s+[0-9.,]+\s+)?PAGADO\s+BASE\s+(?P<cantidad>[0-9.,]+)
+  iva_total:
+    parser: regex
+    regex: 'IVA\s+([0-9.,]+)'
+
+  resumen_lines:
+    parser: lines
+    start: 'Cuota\s*IVA'
+    end: 'Transgourmet\s*Ibérica|Num\.\s*Aut'
+    line: '.*?(?P<porcentaje_iva>\d+,\d{2})\s+(?P<base_imponible>\d+,\d{2})\s+(?P<cuota_iva>\d+,\d{2})\s*$'
+  
+keywords:
+  - FACTURA
+  - Transgourmet
+  - TOTAL FACTURA
+  - GM CASH BURGOS
 
 options:
   currency: EUR
   date_formats:
     - '%d-%m-%Y'
-  
   decimal_separator: ','
-  
-  # Reemplazar separadores para procesamiento numérico
-  replace:
-    - [',', '.']
-
-lines:
-  start: DESCRIPCIÓN.*?PRECIO U\.
-  end: Base Imponible
-  first_line: '^\d{8}\s+'
-  last_line: '^Base Imponible'
-  
-  types:
-    - ^\d{8}\s+(.+?)\s+([\d,\.]+)%\s+([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)\s+([\d,\.]+)\s+(\d+),00
-  
-  fields:
-    - code
-    - description
-    - vat_rate
-    - unit_price
-    - quantity_type
-    - price_with_vat
-    - price_without_vat
-    - quantity
-
-tables:
-  - name: items
-    header: CODIGO\s+DESCRIPCIÓN
-    body: '(\d{8})\s+(.+?)\s+([\d,]+%)\s+([\d,\.]+)\s+'
-    footer: Base Imponible
-    
-    columns:
-      - name: code
-        type: string
-      - name: description
-        type: string
-      - name: vat_rate
-        type: string
-      - name: unit_price
-        type: float
-      - name: quantity
-        type: float
-      - name: subtotal
-        type: float
-        
+  remove_whitespace: false
+  languages:
+    - es

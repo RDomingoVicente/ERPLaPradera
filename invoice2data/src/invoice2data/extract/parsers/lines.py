@@ -69,6 +69,7 @@ def parse_block(  # noqa: RUF100 C901
     assert "line" in settings, (
         "Error in Template %s Line regex missing" % template["template_name"]
     )
+    logger.debug("Settings A ========================\n")
 
     logger.debug("START lines block content ========================\n%s", content)
     logger.debug("END lines block content ==========================")

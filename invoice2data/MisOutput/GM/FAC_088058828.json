@@ -1,0 +1,786 @@
+[
+    {
+        "issuer": "Transgourmet GM",
+        "invoice_number": "250065088058828",
+        "date": "14-11-2025",
+        "albaran": "006703864",
+        "amount": "1.238,46",
+        "cliente_id": "2159424",
+        "cliente_nombre": "CASTRO CASTRO STEPHANIE MAGALY",
+        "nif": "72371946P",
+        "telefono": "639184964",
+        "detail_lines": [
+            {
+                "codigo": "08000201",
+                "description": "ACEITE GOURMET GIRASOL 5L 0.2º",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "7,190",
+                "precio_con_iva": "7,909",
+                "total": "14,38"
+            },
+            {
+                "codigo": "08000231",
+                "description": "ACEITE GOURMET OLIVA SUAVE 5L 0.4º",
+                "iva": "4,0%",
+                "cantidad": "2,00",
+                "unidades": "4,00",
+                "precio_sin_iva": "18,450",
+                "precio_con_iva": "19,188",
+                "total": "73,80"
+            },
+            {
+                "codigo": "08000191",
+                "description": "ACEITE GOURMET V.EXT.5L 0.7º",
+                "iva": "4,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "22,400",
+                "precio_con_iva": "23,296",
+                "total": "44,80"
+            },
+            {
+                "codigo": "00013307",
+                "description": "ACEITUNA ESPAÑOLA RELL.SUAVE 130G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,870",
+                "precio_con_iva": "2,057",
+                "total": "1,87"
+            },
+            {
+                "codigo": "08000311",
+                "description": "ARROZ LA FALLERA EXT. 5K",
+                "iva": "4,0%",
+                "cantidad": "3,00",
+                "unidades": "3,00",
+                "precio_sin_iva": "7,950",
+                "precio_con_iva": "8,268",
+                "total": "23,85"
+            },
+            {
+                "codigo": "00218900",
+                "description": "AZUCAR AZUCARERA MORENO 1K",
+                "iva": "10,0%",
+                "cantidad": "5,00",
+                "unidades": "5,00",
+                "precio_sin_iva": "1,640",
+                "precio_con_iva": "1,804",
+                "total": "8,20"
+            },
+            {
+                "codigo": "00222636",
+                "description": "BARQUILLO RIFACLI CHOCO.80G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,450",
+                "precio_con_iva": "1,595",
+                "total": "1,45"
+            },
+            {
+                "codigo": "00222637",
+                "description": "BARQUILLO RIFACLI SELEC.90G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "0,990",
+                "precio_con_iva": "1,089",
+                "total": "0,99"
+            },
+            {
+                "codigo": "00218499",
+                "description": "BATIDO CACAOLAT CHOCO.PLAST.275ML",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "24,00",
+                "precio_sin_iva": "1,230",
+                "precio_con_iva": "1,353",
+                "total": "29,52"
+            },
+            {
+                "codigo": "00039788",
+                "description": "BOMBON NESTLE C.ROJA 198G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,990",
+                "precio_con_iva": "6,589",
+                "total": "5,99"
+            },
+            {
+                "codigo": "00219131",
+                "description": "BONITO SERRATS AC.OLIVA LATA 75G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "2,500",
+                "precio_con_iva": "2,750",
+                "total": "2,50"
+            },
+            {
+                "codigo": "00220046",
+                "description": "CAPRICHOS LA CONFITERA MIEL 125G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,150",
+                "precio_con_iva": "1,265",
+                "total": "1,15"
+            },
+            {
+                "codigo": "00202093",
+                "description": "CAPRICHOS LA CONFITERA NAVID.150G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,250",
+                "precio_con_iva": "1,375",
+                "total": "1,25"
+            },
+            {
+                "codigo": "00201418",
+                "description": "CARAMELO MONTEY LIQ.900G",
+                "iva": "10,0%",
+                "cantidad": "4,00",
+                "unidades": "4,00",
+                "precio_sin_iva": "3,800",
+                "precio_con_iva": "4,180",
+                "total": "15,20"
+            },
+            {
+                "codigo": "00018392",
+                "description": "CHOCO.GOURMET NEG.70% CACAO 100G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,570",
+                "precio_con_iva": "1,727",
+                "total": "1,57"
+            },
+            {
+                "codigo": "00040273",
+                "description": "COLACAO 50S. 16G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "13,850",
+                "precio_con_iva": "15,235",
+                "total": "13,85"
+            },
+            {
+                "codigo": "00206916",
+                "description": "FOIE GRAS DELICASS PATO BLOC 130G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,930",
+                "precio_con_iva": "6,523",
+                "total": "5,93"
+            },
+            {
+                "codigo": "00055857",
+                "description": "GALL.CUETARA CHOCOFLAKES 520G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "3,500",
+                "precio_con_iva": "3,850",
+                "total": "3,50"
+            },
+            {
+                "codigo": "00217986",
+                "description": "GALL.FILIPINOS CHOCO.128G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,660",
+                "precio_con_iva": "1,826",
+                "total": "1,66"
+            },
+            {
+                "codigo": "00049211",
+                "description": "GALL.FONTANEDA DIGESTIVE 700G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "3,360",
+                "precio_con_iva": "3,696",
+                "total": "3,36"
+            },
+            {
+                "codigo": "00016823",
+                "description": "GALL.GOURMET CHOCO.NEG 150G",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "1,560",
+                "precio_con_iva": "1,716",
+                "total": "3,12"
+            },
+            {
+                "codigo": "00212046",
+                "description": "GALL.GOURMET DOR.200G P-4",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "1,430",
+                "precio_con_iva": "1,573",
+                "total": "2,86"
+            },
+            {
+                "codigo": "00221036",
+                "description": "GOFRE GOURMET C/CHOCO.110G",
+                "iva": "10,0%",
+                "cantidad": "4,00",
+                "unidades": "4,00",
+                "precio_sin_iva": "0,610",
+                "precio_con_iva": "0,671",
+                "total": "2,44"
+            },
+            {
+                "codigo": "00045403",
+                "description": "HARINA GOURMET USO COMUN 1K",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "10,00",
+                "precio_sin_iva": "0,640",
+                "precio_con_iva": "0,666",
+                "total": "6,40"
+            },
+            {
+                "codigo": "00049445",
+                "description": "LECHE GOURMET COND.ANTIGOT.450G.",
+                "iva": "10,0%",
+                "cantidad": "3,00",
+                "unidades": "3,00",
+                "precio_sin_iva": "2,090",
+                "precio_con_iva": "2,299",
+                "total": "6,27"
+            },
+            {
+                "codigo": "00020040",
+                "description": "LECHE GOURMET ENT.1L",
+                "iva": "4,0%",
+                "cantidad": "2,00",
+                "unidades": "12,00",
+                "precio_sin_iva": "0,910",
+                "precio_con_iva": "0,946",
+                "total": "10,92"
+            },
+            {
+                "codigo": "00217847",
+                "description": "MAIZ ECONOMY DULCE 1,84K",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "4,660",
+                "precio_con_iva": "5,126",
+                "total": "9,32"
+            },
+            {
+                "codigo": "00069588",
+                "description": "PAN BIMBO HOST.REB.GRUESA 1K",
+                "iva": "4,0%",
+                "cantidad": "3,00",
+                "unidades": "3,00",
+                "precio_sin_iva": "2,390",
+                "precio_con_iva": "2,486",
+                "total": "7,17"
+            },
+            {
+                "codigo": "00035373",
+                "description": "PASTA GALLO FIDEO Nº4 450G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "18,00",
+                "precio_sin_iva": "0,950",
+                "precio_con_iva": "1,045",
+                "total": "17,10"
+            },
+            {
+                "codigo": "00035450",
+                "description": "PASTA GOURMET TALLARIN 5K\\P",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "6,790",
+                "precio_con_iva": "7,469",
+                "total": "6,79"
+            },
+            {
+                "codigo": "00034749",
+                "description": "PREP.HORNEAR ROYAL BOTE 900 G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,890",
+                "precio_con_iva": "6,479",
+                "total": "5,89"
+            },
+            {
+                "codigo": "00215302",
+                "description": "STDO.DELAVIUDA TURRON POR.200G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,250",
+                "precio_con_iva": "5,775",
+                "total": "5,25"
+            },
+            {
+                "codigo": "00008310",
+                "description": "TOMATE ORLANDO FRITO LATA 4,1K",
+                "iva": "10,0%",
+                "cantidad": "3,00",
+                "unidades": "3,00",
+                "precio_sin_iva": "8,550",
+                "precio_con_iva": "9,405",
+                "total": "25,65"
+            },
+            {
+                "codigo": "00205817",
+                "description": "TOPPING CRESCO FRESA 1K",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "5,190",
+                "precio_con_iva": "5,709",
+                "total": "10,38"
+            },
+            {
+                "codigo": "00075986",
+                "description": "TORTILLA MEXIFOOD TRIGO 20CM B.20U",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "3,200",
+                "precio_con_iva": "3,328",
+                "total": "3,20"
+            },
+            {
+                "codigo": "00220156",
+                "description": "TRUFAS DELAVIUDA AL CACAO 80G",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,290",
+                "precio_con_iva": "1,419",
+                "total": "1,29"
+            },
+            {
+                "codigo": "00218453",
+                "description": "TURRON ALMENDRO STDO.CRUJ.PORC.250",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,150",
+                "precio_con_iva": "5,665",
+                "total": "5,15"
+            },
+            {
+                "codigo": "00069796",
+                "description": "ENVASE PET MIKRAL 1000CC 50U",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "13,080",
+                "precio_con_iva": "15,827",
+                "total": "13,08"
+            },
+            {
+                "codigo": "00069791",
+                "description": "ENVASE PET MIKRAL 750CC 50U",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "9,390",
+                "precio_con_iva": "11,362",
+                "total": "9,39"
+            },
+            {
+                "codigo": "00016419",
+                "description": "BEB.ESP.VETERANO 1L 30º",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "7,590",
+                "precio_con_iva": "9,184",
+                "total": "15,18"
+            },
+            {
+                "codigo": "00028136",
+                "description": "BRANDY MAGNO 70 CL 36º",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "9,550",
+                "precio_con_iva": "11,556",
+                "total": "19,10"
+            },
+            {
+                "codigo": "00081313",
+                "description": "COCACOLA PET 1,25L",
+                "iva": "21,0%",
+                "cantidad": "4,00",
+                "unidades": "24,00",
+                "precio_sin_iva": "1,120",
+                "precio_con_iva": "1,355",
+                "total": "26,88"
+            },
+            {
+                "codigo": "00028373",
+                "description": "GINEBRA SEAGRAM'S 70CL 40º",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "6,00",
+                "precio_sin_iva": "12,750",
+                "precio_con_iva": "15,428",
+                "total": "76,50"
+            },
+            {
+                "codigo": "00082744",
+                "description": "LICOR RUAVIEJA CAFE 70CL 26º",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "9,590",
+                "precio_con_iva": "11,604",
+                "total": "19,18"
+            },
+            {
+                "codigo": "00082756",
+                "description": "PACHARAN NAVARRA 1L 25º",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "6,00",
+                "precio_sin_iva": "8,750",
+                "precio_con_iva": "10,588",
+                "total": "52,50"
+            },
+            {
+                "codigo": "00005631",
+                "description": "RON BRUGAL AÑEJO 1L 38º",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "15,590",
+                "precio_con_iva": "18,864",
+                "total": "31,18"
+            },
+            {
+                "codigo": "00050856",
+                "description": "WHISKY BALLANTINE'S 70CL 40º",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "6,00",
+                "precio_sin_iva": "10,990",
+                "precio_con_iva": "13,298",
+                "total": "65,94"
+            },
+            {
+                "codigo": "00011259",
+                "description": "WHISKY DEWAR'S W.LABEL 70CL 40º",
+                "iva": "21,0%",
+                "cantidad": "3,00",
+                "unidades": "3,00",
+                "precio_sin_iva": "10,790",
+                "precio_con_iva": "13,056",
+                "total": "32,37"
+            },
+            {
+                "codigo": "00078182",
+                "description": "ZUMO D.SIMON TROPICAL 33CL P-3",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "7,00",
+                "precio_sin_iva": "1,170",
+                "precio_con_iva": "1,416",
+                "total": "8,19"
+            },
+            {
+                "codigo": "00015864",
+                "description": "TRASERO POLLO CONG.E/K",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "5,000",
+                "precio_sin_iva": "3,350",
+                "precio_con_iva": "3,685",
+                "total": "16,75"
+            },
+            {
+                "codigo": "00219659",
+                "description": "YEMA DOVO HUEVO 1K",
+                "iva": "10,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "10,850",
+                "precio_con_iva": "11,935",
+                "total": "21,70"
+            },
+            {
+                "codigo": "00212759",
+                "description": "JAMON S.ALCARAZ CUR.TAQUITOS 500G",
+                "iva": "10,0%",
+                "cantidad": "4,00",
+                "unidades": "4,00",
+                "precio_sin_iva": "6,790",
+                "precio_con_iva": "7,469",
+                "total": "27,16"
+            },
+            {
+                "codigo": "00054373",
+                "description": "PALETA CENTELLES 3,7K",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "29,990",
+                "precio_con_iva": "32,989",
+                "total": "29,99"
+            },
+            {
+                "codigo": "00009700",
+                "description": "CALAMAR QUALITY SUCIO 6/10 E/K",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "10,450",
+                "precio_con_iva": "11,495",
+                "total": "20,90"
+            },
+            {
+                "codigo": "00088404",
+                "description": "GAMBON Nº2 E/K",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "11,590",
+                "precio_con_iva": "12,749",
+                "total": "23,18"
+            },
+            {
+                "codigo": "00043161",
+                "description": "ACTIMEL FRESA 100G P-12",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "5,350",
+                "precio_con_iva": "5,564",
+                "total": "5,35"
+            },
+            {
+                "codigo": "00049612",
+                "description": "Y.DANONE NAT.AZUCARA.P-8",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,800",
+                "precio_con_iva": "1,872",
+                "total": "1,80"
+            },
+            {
+                "codigo": "00220919",
+                "description": "ACONDIC.PANTENE REPARA/PROTEG.275M",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "3,400",
+                "precio_con_iva": "4,114",
+                "total": "3,40"
+            },
+            {
+                "codigo": "00205570",
+                "description": "BAYETA MF VILEDA ULTRAFRESH 3U",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "1,950",
+                "precio_con_iva": "2,360",
+                "total": "3,90"
+            },
+            {
+                "codigo": "00017188",
+                "description": "DETERG.SKIP ACTIVE CLEAN 90D",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "12,220",
+                "precio_con_iva": "14,786",
+                "total": "12,22"
+            },
+            {
+                "codigo": "00215945",
+                "description": "ESTROPAJO SALVAUÑAS QUALITY INDU.6U",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,830",
+                "precio_con_iva": "2,214",
+                "total": "1,83"
+            },
+            {
+                "codigo": "00031159",
+                "description": "FILM QUALITY TRANSP.300MX45CM",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "9,690",
+                "precio_con_iva": "11,725",
+                "total": "9,69"
+            },
+            {
+                "codigo": "00016234",
+                "description": "GEL AGRADO BAÑO FRESAS DULCES 750M",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,430",
+                "precio_con_iva": "1,730",
+                "total": "1,43"
+            },
+            {
+                "codigo": "00213791",
+                "description": "GUANTE QUALITY NIT.AZ.S/PO.T-M 100U",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "3,250",
+                "precio_con_iva": "3,933",
+                "total": "3,25"
+            },
+            {
+                "codigo": "00048328",
+                "description": "LAVAV.FAIRY PROFES.5L",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "8,690",
+                "precio_con_iva": "10,515",
+                "total": "17,38"
+            },
+            {
+                "codigo": "00213272",
+                "description": "LAVAV.FAIRY ULTRA 780+120ML",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "4,350",
+                "precio_con_iva": "5,264",
+                "total": "4,35"
+            },
+            {
+                "codigo": "00006078",
+                "description": "LIMPIADOR QUALITY HORNO DESENG.5L\\P",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "7,890",
+                "precio_con_iva": "9,547",
+                "total": "7,89"
+            },
+            {
+                "codigo": "00005393",
+                "description": "MANTEL QUALITY ROLLO 1C 1X100M /P",
+                "iva": "21,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "10,430",
+                "precio_con_iva": "12,620",
+                "total": "20,86"
+            },
+            {
+                "codigo": "00001554",
+                "description": "PAPEL ALUM.QUALITY 300M X 39CM",
+                "iva": "21,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "34,600",
+                "precio_con_iva": "41,866",
+                "total": "34,60"
+            },
+            {
+                "codigo": "00092435",
+                "description": "LECHUGA ICEBERG E/U.",
+                "iva": "4,0%",
+                "cantidad": "7,00",
+                "unidades": "7,00",
+                "precio_sin_iva": "0,750",
+                "precio_con_iva": "0,780",
+                "total": "5,25"
+            },
+            {
+                "codigo": "00092178",
+                "description": "LIMON BOL.1K E/U",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "1,990",
+                "precio_con_iva": "2,070",
+                "total": "1,99"
+            },
+            {
+                "codigo": "00092560",
+                "description": "PEREJIL E/U",
+                "iva": "10,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "2,200",
+                "precio_con_iva": "2,420",
+                "total": "2,20"
+            },
+            {
+                "codigo": "00219119",
+                "description": "MOZZARELLA QUALITY TIRAS 1K",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "7,470",
+                "precio_con_iva": "7,769",
+                "total": "7,47"
+            },
+            {
+                "codigo": "00091214",
+                "description": "QUESO HOCHLAND SABAN.NARA.140LONCH",
+                "iva": "4,0%",
+                "cantidad": "1,00",
+                "unidades": "1,00",
+                "precio_sin_iva": "20,780",
+                "precio_con_iva": "21,611",
+                "total": "20,78"
+            },
+            {
+                "codigo": "00219326",
+                "description": "QUESO QUALITY/ANKLY GOUDA LONCH.1K",
+                "iva": "4,0%",
+                "cantidad": "2,00",
+                "unidades": "2,00",
+                "precio_sin_iva": "7,290",
+                "precio_con_iva": "7,582",
+                "total": "14,58"
+            }
+        ],
+        "base_imponible": "1.088,97",
+        "iva_total": "149,49",
+        "resumen_lines": [
+            {
+                "porcentaje_iva": "4,00",
+                "base_imponible": "234,31",
+                "cuota_iva": "9,37"
+            },
+            {
+                "porcentaje_iva": "10,00",
+                "base_imponible": "357,79",
+                "cuota_iva": "35,78"
+            },
+            {
+                "porcentaje_iva": "21,00",
+                "base_imponible": "496,87",
+                "cuota_iva": "104,34"
+            }
+        ],
+        "currency": "EUR",
+        "desc": "Invoice from Transgourmet GM"
+    }
+]

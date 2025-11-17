@@ -80,7 +80,7 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                             <select class=\"form-control\" id=\"provider\" name=\"provider\" required>
                                 <option value=\"\">";
         // line 24
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["Selecciones proveedor"], "method", false, false, false, 24), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["Seleccione proveedor"], "method", false, false, false, 24), "html", null, true);
         yield "</option>
                                 <option value=\"TUDIS\">Tudis</option>
                                 <option value=\"LACALLE\">Embutidos la calle</option>
@@ -487,7 +487,7 @@ document.getElementById('pdf_file').addEventListener('change', function(e) {
                                 <i class=\"fas fa-building\"></i> {{ i18n.trans('supplier') }}
                             </label>
                             <select class=\"form-control\" id=\"provider\" name=\"provider\" required>
-                                <option value=\"\">{{ i18n.trans('Selecciones proveedor') }}</option>
+                                <option value=\"\">{{ i18n.trans('Seleccione proveedor') }}</option>
                                 <option value=\"TUDIS\">Tudis</option>
                                 <option value=\"LACALLE\">Embutidos la calle</option>
                                 <option value=\"GM\">Transgourmet GM</option>

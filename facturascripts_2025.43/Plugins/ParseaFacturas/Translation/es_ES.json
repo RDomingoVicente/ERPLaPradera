@@ -26,5 +26,6 @@
     "invalid-file-type": "Tipo de archivo inválido. Solo se permiten PDFs",
     "file-too-large": "El archivo es demasiado grande. Máximo 10MB",
     "invoice-parsed-successfully": "Factura parseada correctamente",
-    "parse-error": "Error al parsear la factura"
+    "parse-error": "Error al parsear la factura",
+    "select-supplier-to-use-correct-template": "Seleccione proveedor para usar la plantilla correcta"
 }

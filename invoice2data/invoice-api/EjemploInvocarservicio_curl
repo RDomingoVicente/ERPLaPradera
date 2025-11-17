@@ -1,0 +1,6 @@
+curl -X POST -F "file=@./002741M5137820250715.pdf" http://172.19.0.7:5000/api/extract
+
+curl -X POST \
+  -F "file=@./FAC_088058828.pdf" \
+  -F "provider=GM" \
+  http://172.19.0.7:5500/api/extract

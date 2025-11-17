@@ -14,9 +14,9 @@ class Invoice2DataService
     public function __construct()
     {
         // Configura la URL de tu servicio Flask
-        //$this->baseUrl = 'http://172.19.0.7:5500';
+        $this->baseUrl = 'http://172.19.0.7:5500';
         //$this->baseUrl = 'http://localhost:5500';
-        $this->baseUrl = 'http://192.168.1.45:5500';
+        //$this->baseUrl = 'http://192.168.1.45:5500';
         $this->timeout = 30; // segundos
     }
 

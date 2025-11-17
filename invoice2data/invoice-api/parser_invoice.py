@@ -7,6 +7,7 @@ import configparser
 
 app = Flask(__name__)
 CORS(app)
+#app.config['JSON_AS_ASCII'] = False
 
 # Cargar configuración
 config = configparser.ConfigParser()
@@ -69,14 +70,14 @@ def parse_invoice():
             return jsonify({
                 "success": True,
                 "data": {
-                    "cliente": result.get('cliente',''),
+                    "Nombre cliente": result.get('cliente_nombre',''),
                     "Moneda": result.get('currency',''),
                     "Proveedor": result.get('issuer', ''),
-                    "n_factura": result.get('invoice_number', ''),
-                    "fecha": result.get('date', ''),
-                    "total_factura": result.get('amount', 0),
-                    "Dirección": result.get('direcc',''),
-                    "NIF": result.get('nif',''),
+                    "N. Factura": result.get('invoice_number', ''),
+                    "Fecha factura": result.get('date', ''),
+                    "Total factura": result.get('amount', 0),
+                    "NIF cliente": result.get('nif',''),
+                    "Telefono cliente": result.get('telefono',''),
                     "lineas_articulo": items_detail,
                     "resumen_factura": resumen_detail
                 }

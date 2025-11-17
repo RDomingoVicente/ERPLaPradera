@@ -80,34 +80,32 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                             <select class=\"form-control\" id=\"provider\" name=\"provider\" required>
                                 <option value=\"\">";
         // line 24
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["select-supplier"], "method", false, false, false, 24), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["Selecciones proveedor"], "method", false, false, false, 24), "html", null, true);
         yield "</option>
-                                <option value=\"Tudis\">Tudis</option>
-                                <option value=\"Lacalle\">Embutidos la calle</option>
-                                <option value=\"orange\">Orange</option>
-                                <option value=\"yoigo\">Yoigo</option>
-                                <option value=\"masmovil\">MásMóvil</option>
-                                <option value=\"pepephone\">Pepephone</option>
+                                <option value=\"TUDIS\">Tudis</option>
+                                <option value=\"LACALLE\">Embutidos la calle</option>
+                                <option value=\"GM\">Transgourmet GM</option>
+                                <option value=\"BEBIDASMARTIN\">Bebidas Martin</option>
                                 <option value=\"otro\">";
-        // line 31
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["other"], "method", false, false, false, 31), "html", null, true);
+        // line 29
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["other"], "method", false, false, false, 29), "html", null, true);
         yield "</option>
                             </select>
                             <small class=\"form-text text-muted\">
                                 ";
-        // line 34
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["select-supplier-to-use-correct-template"], "method", false, false, false, 34), "html", null, true);
+        // line 32
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["select-supplier-to-use-correct-template"], "method", false, false, false, 32), "html", null, true);
         yield "
                             </small>
                         </div>
                         
                         ";
-        // line 39
+        // line 37
         yield "                        <div class=\"form-group\">
                             <label for=\"pdf_file\">
                                 <i class=\"fas fa-file-pdf\"></i> ";
-        // line 41
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["select-pdf-file"], "method", false, false, false, 41), "html", null, true);
+        // line 39
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["select-pdf-file"], "method", false, false, false, 39), "html", null, true);
         yield "
                             </label>
                             <div class=\"custom-file\">
@@ -119,23 +117,23 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                                        required>
                                 <label class=\"custom-file-label\" for=\"pdf_file\">
                                     ";
-        // line 51
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["choose-file"], "method", false, false, false, 51), "html", null, true);
+        // line 49
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["choose-file"], "method", false, false, false, 49), "html", null, true);
         yield "
                                 </label>
                             </div>
                             <small class=\"form-text text-muted\">
                                 ";
-        // line 55
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["max-file-size-10mb"], "method", false, false, false, 55), "html", null, true);
+        // line 53
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["max-file-size-10mb"], "method", false, false, false, 53), "html", null, true);
         yield "
                             </small>
                         </div>
                         
                         <button type=\"submit\" class=\"btn btn-primary\">
                             <i class=\"fas fa-upload\"></i> ";
-        // line 60
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["upload-and-parse"], "method", false, false, false, 60), "html", null, true);
+        // line 58
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["upload-and-parse"], "method", false, false, false, 58), "html", null, true);
         yield "
                         </button>
                     </form>
@@ -143,173 +141,173 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
             </div>
 
             ";
-        // line 67
+        // line 65
         yield "            ";
-        if (CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 67)) {
-            // line 68
+        if (CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 65)) {
+            // line 66
             yield "            <div class=\"card shadow\">
                 <div class=\"card-header bg-success text-white\">
                     <h4>
                         <i class=\"fas fa-check-circle\"></i> ";
-            // line 71
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["parse-results"], "method", false, false, false, 71), "html", null, true);
+            // line 69
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["parse-results"], "method", false, false, false, 69), "html", null, true);
             yield "
                     </h4>
                 </div>
                 <div class=\"card-body\">
                     ";
-            // line 76
+            // line 74
             yield "                    ";
-            if (CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "selectedProvider", [], "any", false, false, false, 76)) {
-                // line 77
+            if (CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "selectedProvider", [], "any", false, false, false, 74)) {
+                // line 75
                 yield "                    <div class=\"alert alert-info\">
                         <strong><i class=\"fas fa-building\"></i> ";
-                // line 78
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["supplier"], "method", false, false, false, 78), "html", null, true);
+                // line 76
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["supplier"], "method", false, false, false, 76), "html", null, true);
                 yield ":</strong> 
                         ";
-                // line 79
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::upper($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "selectedProvider", [], "any", false, false, false, 79)), "html", null, true);
+                // line 77
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::upper($this->env->getCharset(), CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "selectedProvider", [], "any", false, false, false, 77)), "html", null, true);
                 yield "
                     </div>
                     ";
             }
-            // line 82
+            // line 80
             yield "
                     <div class=\"row\">
                         ";
-            // line 85
+            // line 83
             yield "                        ";
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 85), "issuer", [], "any", false, false, false, 85)) {
-                // line 86
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 83), "issuer", [], "any", false, false, false, 83)) {
+                // line 84
                 yield "                        <div class=\"col-md-6 mb-3\">
                             <div class=\"card\">
                                 <div class=\"card-header bg-info text-white\">
                                     <h5><i class=\"fas fa-building\"></i> ";
-                // line 89
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["supplier-info"], "method", false, false, false, 89), "html", null, true);
+                // line 87
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["supplier-info"], "method", false, false, false, 87), "html", null, true);
                 yield "</h5>
                                 </div>
                                 <div class=\"card-body\">
                                     ";
-                // line 92
-                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 92), "issuer", [], "any", false, false, false, 92), "name", [], "any", false, false, false, 92)) {
-                    // line 93
+                // line 90
+                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 90), "issuer", [], "any", false, false, false, 90), "name", [], "any", false, false, false, 90)) {
+                    // line 91
                     yield "                                    <p><strong>";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["name"], "method", false, false, false, 93), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["name"], "method", false, false, false, 91), "html", null, true);
                     yield ":</strong> ";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 93), "issuer", [], "any", false, false, false, 93), "name", [], "any", false, false, false, 93), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 91), "issuer", [], "any", false, false, false, 91), "name", [], "any", false, false, false, 91), "html", null, true);
                     yield "</p>
                                     ";
                 }
-                // line 95
+                // line 93
                 yield "                                    ";
-                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 95), "issuer", [], "any", false, false, false, 95), "vat_number", [], "any", false, false, false, 95)) {
-                    // line 96
+                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 93), "issuer", [], "any", false, false, false, 93), "vat_number", [], "any", false, false, false, 93)) {
+                    // line 94
                     yield "                                    <p><strong>";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["vat-number"], "method", false, false, false, 96), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["vat-number"], "method", false, false, false, 94), "html", null, true);
                     yield ":</strong> ";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 96), "issuer", [], "any", false, false, false, 96), "vat_number", [], "any", false, false, false, 96), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 94), "issuer", [], "any", false, false, false, 94), "vat_number", [], "any", false, false, false, 94), "html", null, true);
                     yield "</p>
                                     ";
                 }
-                // line 98
+                // line 96
                 yield "                                    ";
-                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 98), "issuer", [], "any", false, false, false, 98), "address", [], "any", false, false, false, 98)) {
-                    // line 99
+                if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 96), "issuer", [], "any", false, false, false, 96), "address", [], "any", false, false, false, 96)) {
+                    // line 97
                     yield "                                    <p><strong>";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["address"], "method", false, false, false, 99), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["address"], "method", false, false, false, 97), "html", null, true);
                     yield ":</strong> ";
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 99), "issuer", [], "any", false, false, false, 99), "address", [], "any", false, false, false, 99), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 97), "issuer", [], "any", false, false, false, 97), "address", [], "any", false, false, false, 97), "html", null, true);
                     yield "</p>
                                     ";
                 }
-                // line 101
+                // line 99
                 yield "                                </div>
                             </div>
                         </div>
                         ";
             }
-            // line 105
+            // line 103
             yield "
                         ";
-            // line 107
+            // line 105
             yield "                        <div class=\"col-md-6 mb-3\">
                             <div class=\"card\">
                                 <div class=\"card-header bg-primary text-white\">
                                     <h5><i class=\"fas fa-file-invoice-dollar\"></i> ";
-            // line 110
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-info"], "method", false, false, false, 110), "html", null, true);
+            // line 108
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-info"], "method", false, false, false, 108), "html", null, true);
             yield "</h5>
                                 </div>
                                 <div class=\"card-body\">
                                     ";
-            // line 113
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 113), "invoice_number", [], "any", false, false, false, 113)) {
-                // line 114
+            // line 111
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 111), "invoice_number", [], "any", false, false, false, 111)) {
+                // line 112
                 yield "                                    <p><strong>";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-number"], "method", false, false, false, 114), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-number"], "method", false, false, false, 112), "html", null, true);
                 yield ":</strong> ";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 114), "invoice_number", [], "any", false, false, false, 114), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 112), "invoice_number", [], "any", false, false, false, 112), "html", null, true);
                 yield "</p>
                                     ";
             }
-            // line 116
+            // line 114
             yield "                                    ";
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 116), "date", [], "any", false, false, false, 116)) {
-                // line 117
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 114), "date", [], "any", false, false, false, 114)) {
+                // line 115
                 yield "                                    <p><strong>";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["date"], "method", false, false, false, 117), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["date"], "method", false, false, false, 115), "html", null, true);
                 yield ":</strong> ";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 117), "date", [], "any", false, false, false, 117), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 115), "date", [], "any", false, false, false, 115), "html", null, true);
                 yield "</p>
                                     ";
             }
-            // line 119
+            // line 117
             yield "                                    ";
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 119), "due_date", [], "any", false, false, false, 119)) {
-                // line 120
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 117), "due_date", [], "any", false, false, false, 117)) {
+                // line 118
                 yield "                                    <p><strong>";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["due-date"], "method", false, false, false, 120), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["due-date"], "method", false, false, false, 118), "html", null, true);
                 yield ":</strong> ";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 120), "due_date", [], "any", false, false, false, 120), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 118), "due_date", [], "any", false, false, false, 118), "html", null, true);
                 yield "</p>
                                     ";
             }
-            // line 122
+            // line 120
             yield "                                    ";
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 122), "amount", [], "any", false, false, false, 122)) {
-                // line 123
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 120), "amount", [], "any", false, false, false, 120)) {
+                // line 121
                 yield "                                    <p><strong>";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["total-amount"], "method", false, false, false, 123), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["total-amount"], "method", false, false, false, 121), "html", null, true);
                 yield ":</strong> 
                                         <span class=\"badge badge-success badge-lg\">
                                             ";
-                // line 125
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 125), "amount", [], "any", false, false, false, 125), "html", null, true);
+                // line 123
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 123), "amount", [], "any", false, false, false, 123), "html", null, true);
                 yield " ";
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, true, false, 125), "currency", [], "any", true, true, false, 125)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, true, false, 125), "currency", [], "any", false, false, false, 125), "EUR")) : ("EUR")), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, true, false, 123), "currency", [], "any", true, true, false, 123)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, true, false, 123), "currency", [], "any", false, false, false, 123), "EUR")) : ("EUR")), "html", null, true);
                 yield "
                                         </span>
                                     </p>
                                     ";
             }
-            // line 129
+            // line 127
             yield "                                </div>
                             </div>
                         </div>
                     </div>
 
                     ";
-            // line 135
+            // line 133
             yield "                    ";
-            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 135), "lines", [], "any", false, false, false, 135)) {
-                // line 136
+            if (CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 133), "lines", [], "any", false, false, false, 133)) {
+                // line 134
                 yield "                    <div class=\"card mt-3\">
                         <div class=\"card-header bg-secondary text-white\">
                             <h5><i class=\"fas fa-list\"></i> ";
-                // line 138
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-lines"], "method", false, false, false, 138), "html", null, true);
+                // line 136
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["invoice-lines"], "method", false, false, false, 136), "html", null, true);
                 yield "</h5>
                         </div>
                         <div class=\"card-body\">
@@ -318,47 +316,47 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                                     <thead class=\"thead-dark\">
                                         <tr>
                                             <th>";
+                // line 143
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["description"], "method", false, false, false, 143), "html", null, true);
+                yield "</th>
+                                            <th class=\"text-right\">";
+                // line 144
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["quantity"], "method", false, false, false, 144), "html", null, true);
+                yield "</th>
+                                            <th class=\"text-right\">";
                 // line 145
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["description"], "method", false, false, false, 145), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["unit-price"], "method", false, false, false, 145), "html", null, true);
                 yield "</th>
                                             <th class=\"text-right\">";
                 // line 146
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["quantity"], "method", false, false, false, 146), "html", null, true);
-                yield "</th>
-                                            <th class=\"text-right\">";
-                // line 147
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["unit-price"], "method", false, false, false, 147), "html", null, true);
-                yield "</th>
-                                            <th class=\"text-right\">";
-                // line 148
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["total"], "method", false, false, false, 148), "html", null, true);
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["total"], "method", false, false, false, 146), "html", null, true);
                 yield "</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         ";
-                // line 152
+                // line 150
                 $context['_parent'] = $context;
-                $context['_seq'] = CoreExtension::ensureTraversable(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 152), "lines", [], "any", false, false, false, 152));
+                $context['_seq'] = CoreExtension::ensureTraversable(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 150), "lines", [], "any", false, false, false, 150));
                 foreach ($context['_seq'] as $context["_key"] => $context["line"]) {
-                    // line 153
+                    // line 151
                     yield "                                        <tr>
                                             <td>";
+                    // line 152
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "description", [], "any", true, true, false, 152)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "description", [], "any", false, false, false, 152), "-")) : ("-")), "html", null, true);
+                    yield "</td>
+                                            <td class=\"text-right\">";
+                    // line 153
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "quantity", [], "any", true, true, false, 153)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "quantity", [], "any", false, false, false, 153), "-")) : ("-")), "html", null, true);
+                    yield "</td>
+                                            <td class=\"text-right\">";
                     // line 154
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "description", [], "any", true, true, false, 154)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "description", [], "any", false, false, false, 154), "-")) : ("-")), "html", null, true);
-                    yield "</td>
-                                            <td class=\"text-right\">";
-                    // line 155
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "quantity", [], "any", true, true, false, 155)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "quantity", [], "any", false, false, false, 155), "-")) : ("-")), "html", null, true);
-                    yield "</td>
-                                            <td class=\"text-right\">";
-                    // line 156
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "unit_price", [], "any", true, true, false, 156)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "unit_price", [], "any", false, false, false, 156), "-")) : ("-")), "html", null, true);
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "unit_price", [], "any", true, true, false, 154)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "unit_price", [], "any", false, false, false, 154), "-")) : ("-")), "html", null, true);
                     yield "</td>
                                             <td class=\"text-right\">
                                                 <strong>";
-                    // line 158
-                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "total", [], "any", true, true, false, 158)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "total", [], "any", false, false, false, 158), "-")) : ("-")), "html", null, true);
+                    // line 156
+                    yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((CoreExtension::getAttribute($this->env, $this->source, $context["line"], "total", [], "any", true, true, false, 156)) ? (Twig\Extension\CoreExtension::default(CoreExtension::getAttribute($this->env, $this->source, $context["line"], "total", [], "any", false, false, false, 156), "-")) : ("-")), "html", null, true);
                     yield "</strong>
                                             </td>
                                         </tr>
@@ -367,7 +365,7 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['line'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 162
+                // line 160
                 yield "                                    </tbody>
                                 </table>
                             </div>
@@ -375,60 +373,60 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                     </div>
                     ";
             }
-            // line 168
+            // line 166
             yield "
                     ";
-            // line 170
+            // line 168
             yield "                    <div class=\"card mt-3\">
                         <div class=\"card-header\">
                             <h5>
                                 <i class=\"fas fa-code\"></i> ";
-            // line 173
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["raw-data"], "method", false, false, false, 173), "html", null, true);
+            // line 171
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["raw-data"], "method", false, false, false, 171), "html", null, true);
             yield "
                                 <button class=\"btn btn-sm btn-outline-secondary float-right\" 
                                         onclick=\"document.getElementById('rawData').classList.toggle('d-none')\">
                                     <i class=\"fas fa-eye\"></i> ";
-            // line 176
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["show-hide"], "method", false, false, false, 176), "html", null, true);
+            // line 174
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["show-hide"], "method", false, false, false, 174), "html", null, true);
             yield "
                                 </button>
                             </h5>
                         </div>
                         <div class=\"card-body d-none\" id=\"rawData\">
                             <pre class=\"bg-light p-3\" style=\"max-height: 400px; overflow-y: auto;\">";
-            // line 181
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(json_encode(CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 181), Twig\Extension\CoreExtension::constant("JSON_PRETTY_PRINT")), "html", null, true);
+            // line 179
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(json_encode(CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "invoiceData", [], "any", false, false, false, 179), Twig\Extension\CoreExtension::constant("JSON_PRETTY_PRINT")), "html", null, true);
             yield "</pre>
                         </div>
                     </div>
 
                     ";
-            // line 186
+            // line 184
             yield "                    <div class=\"mt-3\">
                         <a href=\"";
-            // line 187
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "url", [], "method", false, false, false, 187), "html", null, true);
+            // line 185
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "url", [], "method", false, false, false, 185), "html", null, true);
             yield "\" class=\"btn btn-secondary\">
                             <i class=\"fas fa-arrow-left\"></i> ";
-            // line 188
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["parse-another"], "method", false, false, false, 188), "html", null, true);
+            // line 186
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["parse-another"], "method", false, false, false, 186), "html", null, true);
             yield "
                         </a>
                         ";
-            // line 191
+            // line 189
             yield "                    </div>
                 </div>
             </div>
             ";
         }
-        // line 195
+        // line 193
         yield "        </div>
     </div>
 </div>
 
 ";
-        // line 200
+        // line 198
         yield "<script>
 document.getElementById('pdf_file').addEventListener('change', function(e) {
     var fileName = e.target.files[0].name;
@@ -461,7 +459,7 @@ document.getElementById('pdf_file').addEventListener('change', function(e) {
      */
     public function getDebugInfo()
     {
-        return array (  432 => 200,  426 => 195,  420 => 191,  415 => 188,  411 => 187,  408 => 186,  401 => 181,  393 => 176,  387 => 173,  382 => 170,  379 => 168,  371 => 162,  361 => 158,  356 => 156,  352 => 155,  348 => 154,  345 => 153,  341 => 152,  334 => 148,  330 => 147,  326 => 146,  322 => 145,  312 => 138,  308 => 136,  305 => 135,  298 => 129,  289 => 125,  283 => 123,  280 => 122,  272 => 120,  269 => 119,  261 => 117,  258 => 116,  250 => 114,  248 => 113,  242 => 110,  237 => 107,  234 => 105,  228 => 101,  220 => 99,  217 => 98,  209 => 96,  206 => 95,  198 => 93,  196 => 92,  190 => 89,  185 => 86,  182 => 85,  178 => 82,  172 => 79,  168 => 78,  165 => 77,  162 => 76,  155 => 71,  150 => 68,  147 => 67,  138 => 60,  130 => 55,  123 => 51,  110 => 41,  106 => 39,  99 => 34,  93 => 31,  83 => 24,  77 => 21,  73 => 19,  66 => 15,  59 => 10,  51 => 4,  47 => 3,  36 => 1,);
+        return array (  430 => 198,  424 => 193,  418 => 189,  413 => 186,  409 => 185,  406 => 184,  399 => 179,  391 => 174,  385 => 171,  380 => 168,  377 => 166,  369 => 160,  359 => 156,  354 => 154,  350 => 153,  346 => 152,  343 => 151,  339 => 150,  332 => 146,  328 => 145,  324 => 144,  320 => 143,  310 => 136,  306 => 134,  303 => 133,  296 => 127,  287 => 123,  281 => 121,  278 => 120,  270 => 118,  267 => 117,  259 => 115,  256 => 114,  248 => 112,  246 => 111,  240 => 108,  235 => 105,  232 => 103,  226 => 99,  218 => 97,  215 => 96,  207 => 94,  204 => 93,  196 => 91,  194 => 90,  188 => 87,  183 => 84,  180 => 83,  176 => 80,  170 => 77,  166 => 76,  163 => 75,  160 => 74,  153 => 69,  148 => 66,  145 => 65,  136 => 58,  128 => 53,  121 => 49,  108 => 39,  104 => 37,  97 => 32,  91 => 29,  83 => 24,  77 => 21,  73 => 19,  66 => 15,  59 => 10,  51 => 4,  47 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -489,13 +487,11 @@ document.getElementById('pdf_file').addEventListener('change', function(e) {
                                 <i class=\"fas fa-building\"></i> {{ i18n.trans('supplier') }}
                             </label>
                             <select class=\"form-control\" id=\"provider\" name=\"provider\" required>
-                                <option value=\"\">{{ i18n.trans('select-supplier') }}</option>
-                                <option value=\"Tudis\">Tudis</option>
-                                <option value=\"Lacalle\">Embutidos la calle</option>
-                                <option value=\"orange\">Orange</option>
-                                <option value=\"yoigo\">Yoigo</option>
-                                <option value=\"masmovil\">MásMóvil</option>
-                                <option value=\"pepephone\">Pepephone</option>
+                                <option value=\"\">{{ i18n.trans('Selecciones proveedor') }}</option>
+                                <option value=\"TUDIS\">Tudis</option>
+                                <option value=\"LACALLE\">Embutidos la calle</option>
+                                <option value=\"GM\">Transgourmet GM</option>
+                                <option value=\"BEBIDASMARTIN\">Bebidas Martin</option>
                                 <option value=\"otro\">{{ i18n.trans('other') }}</option>
                             </select>
                             <small class=\"form-text text-muted\">

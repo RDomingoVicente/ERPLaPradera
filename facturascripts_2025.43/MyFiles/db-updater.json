@@ -3,5 +3,18 @@
     "work_events",
     "settings",
     "empresas",
-    "users"
+    "users",
+    "attached_files",
+    "almacenes",
+    "facturascli",
+    "estados_documentos",
+    "divisas",
+    "albaranescli",
+    "pedidoscli",
+    "presupuestoscli",
+    "clientes",
+    "contactos",
+    "productos",
+    "recibospagoscli",
+    "logs"
 ]

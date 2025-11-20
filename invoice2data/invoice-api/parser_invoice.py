@@ -70,14 +70,14 @@ def parse_invoice():
             return jsonify({
                 "success": True,
                 "data": {
-                    "Nombre cliente": result.get('cliente_nombre',''),
+                    "Nombre_cliente": result.get('cliente_nombre',''),
                     "Moneda": result.get('currency',''),
                     "Proveedor": result.get('issuer', ''),
-                    "N. Factura": result.get('invoice_number', ''),
-                    "Fecha factura": result.get('date', ''),
-                    "Total factura": result.get('amount', 0),
-                    "NIF cliente": result.get('nif',''),
-                    "Telefono cliente": result.get('telefono',''),
+                    "N_Factura": result.get('invoice_number', ''),
+                    "Fecha_factura": result.get('date', ''),
+                    "Total_factura": result.get('amount', 0),
+                    "NIF_cliente": result.get('nif',''),
+                    "Telefono_cliente": result.get('telefono',''),
                     "lineas_articulo": items_detail,
                     "resumen_factura": resumen_detail
                 }

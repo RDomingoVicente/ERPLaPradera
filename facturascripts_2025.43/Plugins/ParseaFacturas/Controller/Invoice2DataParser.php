@@ -12,6 +12,7 @@ class Invoice2DataParser extends Controller
     private $invoice2dataService;
     public $invoiceData;
     public $selectedProvider;
+    public $providers;
 
     public function __construct(string $className = '', string $url = '')
     {
@@ -41,7 +42,8 @@ class Invoice2DataParser extends Controller
         }
         // Preparamos los datos para la vista
         $this->invoiceData = $this->getInvoiceData();
-        $this->selectedProvider = $this->getSelectedProvider();     
+        $this->selectedProvider = $this->getSelectedProvider();
+        $this->providers = $this->getProviders();
     }
 
     private function uploadAction()
@@ -105,5 +107,27 @@ class Invoice2DataParser extends Controller
         Session::clear('selected_provider');
     }
     return $provider;
+    }
+
+    private function getProviders(): array
+    {
+        $providers = [];
+        $filePath = __DIR__ . '/../Config/providers.conf';
+
+        if (file_exists($filePath)) {
+            $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            foreach ($lines as $line) {
+                $parts = explode(':', $line);
+                if (count($parts) === 3) {
+                    $providers[] = [
+                        'display_name' => $parts[0],
+                        'internal_name' => $parts[1],
+                        'internal_code' => $parts[2]
+                    ];
+                }
+            }
+        }
+
+        return $providers;
     }
 }

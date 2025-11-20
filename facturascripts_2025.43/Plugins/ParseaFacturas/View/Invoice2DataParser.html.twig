@@ -22,10 +22,9 @@
                             </label>
                             <select class="form-control" id="provider" name="provider" required>
                                 <option value="">{{ i18n.trans('Seleccione proveedor') }}</option>
-                                <option value="TUDIS">Tudis</option>
-                                <option value="LACALLE">Embutidos la calle</option>
-                                <option value="GM">Transgourmet GM</option>
-                                <option value="BEBIDASMARTIN">Bebidas Martin</option>
+                                {% for provider in fsc.providers %}
+                                    <option value="{{ provider.internal_name }}">{{ provider.display_name }}</option>
+                                {% endfor %}
                                 <option value="otro">{{ i18n.trans('other') }}</option>
                             </select>
                             <small class="form-text text-muted">
@@ -108,27 +107,21 @@
                                     <h5><i class="fas fa-file-invoice-dollar"></i> {{ i18n.trans('invoice-info') }}</h5>
                                 </div>
                                 <div class="card-body">
-                                    {% if fsc.invoiceData.invoice_number %}
-                                    <p><strong>{{ i18n.trans('invoice-number') }}:</strong> {{ fsc.invoiceData.invoice_number }}</p>
-                                    {% endif %}
-                                    {% if fsc.invoiceData.date %}
-                                    <p><strong>{{ i18n.trans('date') }}:</strong> {{ fsc.invoiceData.date }}</p>
-                                    {% endif %}
-                                    {% if fsc.invoiceData.due_date %}
-                                    <p><strong>{{ i18n.trans('due-date') }}:</strong> {{ fsc.invoiceData.due_date }}</p>
-                                    {% endif %}
-                                    {% if fsc.invoiceData.amount %}
-                                    <p><strong>{{ i18n.trans('total-amount') }}:</strong> 
-                                        <span class="badge badge-success badge-lg">
-                                            {{ fsc.invoiceData.amount }} {{ fsc.invoiceData.currency|default('EUR') }}
-                                        </span>
-                                    </p>
-                                    {% endif %}
+                                {# Basic invoice data is always visible #}
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <p><strong>{{ i18n.trans('supplier') }}: {{ fsc.invoiceData.data.Proveedor|default('-') }}</strong></p>
+                                            <p><strong>{{ i18n.trans('invoice-number') }}: {{ fsc.invoiceData.data.N_Factura|default('-') }}</strong></p>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <p><strong>{{ i18n.trans('date') }}: {{ fsc.invoiceData.data.Fecha_factura|default('-') }}</strong></p>
+                                            <p><strong>{{ i18n.trans('total-amount') }}: {{ fsc.invoiceData.data.Total_factura|default('-') }}</strong></p>
+                                            <span class="badge badge-success badge-lg">{{ fsc.invoiceData.amount|default(0) }} {{ fsc.invoiceData.currency|default('EUR') }}</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
                     {# Líneas de la factura #}
                     {% if fsc.invoiceData.lines %}
                     <div class="card mt-3">

@@ -404,6 +404,11 @@
         "customId": "",
         "position": 0
     },
+    "\/Invoice2DataParser copy": {
+        "controller": "\\FacturaScripts\\Dinamic\\Controller\\Invoice2DataParser copy",
+        "customId": "",
+        "position": 0
+    },
     "\/Invoice2DataParser": {
         "controller": "\\FacturaScripts\\Dinamic\\Controller\\Invoice2DataParser",
         "customId": "",

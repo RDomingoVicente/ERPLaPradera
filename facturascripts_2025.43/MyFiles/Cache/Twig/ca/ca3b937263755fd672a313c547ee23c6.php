@@ -403,7 +403,7 @@ class __TwigTemplate_2868b4f6cf164ba4103c9ceb79c9e5ba extends Template
                         <a href=\"";
             // line 178
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["fsc"] ?? null), "url", [], "method", false, false, false, 178), "html", null, true);
-            yield "\" class=\"btn btn-secondary\">
+            yield "?action=clear\" class=\"btn btn-secondary\">
                             <i class=\"fas fa-arrow-left\"></i> ";
             // line 179
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, ($context["i18n"] ?? null), "trans", ["parse-another"], "method", false, false, false, 179), "html", null, true);
@@ -637,7 +637,7 @@ document.getElementById('pdf_file').addEventListener('change', function(e) {
 
                     {# Botones de acción #}
                     <div class=\"mt-3\">
-                        <a href=\"{{ fsc.url() }}\" class=\"btn btn-secondary\">
+                        <a href=\"{{ fsc.url() }}?action=clear\" class=\"btn btn-secondary\">
                             <i class=\"fas fa-arrow-left\"></i> {{ i18n.trans('parse-another') }}
                         </a>
                         {# Aquí puedes añadir más botones como \"Crear Factura\", \"Exportar\", etc. #}

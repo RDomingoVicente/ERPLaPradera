@@ -39,7 +39,11 @@ class Invoice2DataParser extends Controller
             case 'upload':
                 $this->uploadAction();
                 break;
+            case 'clear':
+                $this->clearAction();
+                break;
         }
+
         // Preparamos los datos para la vista
         $this->invoiceData = $this->getInvoiceData();
         $this->selectedProvider = $this->getSelectedProvider();
@@ -80,9 +84,24 @@ class Invoice2DataParser extends Controller
             
             if ($result['success']) {
                 Tools::log()->notice('invoice-parsed-successfully');
+                    // Asegurar que la sesión está iniciada
+                    if (session_status() === PHP_SESSION_NONE) {
+                        session_start();
+                    }
                 // Guardar los datos y el proveedor en sesión
                 Session::set('invoice_data', $result['data']);
                 Session::set('selected_provider', $provider);
+
+    /*                // DEPURACIÓN: Verificar que se guardaron
+    Tools::log()->error('Datos guardados en sesión', [
+        'invoice_data_saved' => Session::get('invoice_data') !== null,
+        'provider_saved' => Session::get('selected_provider') !== null,
+        'session_id' => session_id()
+    ]);*/
+              // Al inicio del método, ANTES de procesar el formulario
+              // Redirigir para limpiar el estado POST y recargar la página
+              // $this->redirect($this->url());
+    
             } else {
                 Tools::log()->error($result['error'] ?? 'parse-error');
             }
@@ -91,22 +110,23 @@ class Invoice2DataParser extends Controller
         }
     }
 
+    private function clearAction()
+    {
+        Session::clear('invoice_data');
+        Session::clear('selected_provider');
+    
+        // Redirigir para limpiar la URL de parámetros
+        $this->redirect($this->url());
+    }
+
     public function getInvoiceData(): ?array
     {
-        // Usar Session de forma estática
-        $data = Session::get('invoice_data');
-        if ($data) {
-            Session::clear('invoice_data');
-        }
-        return $data;
+        return Session::get('invoice_data');
     }
+
     public function getSelectedProvider(): ?string
     {
-    $provider = Session::get('selected_provider');
-    if ($provider) {
-        Session::clear('selected_provider');
-    }
-    return $provider;
+        return Session::get('selected_provider');
     }
 
     private function getProviders(): array
